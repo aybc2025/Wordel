@@ -1,0 +1,44 @@
+.board {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+  padding: 16px 0;
+  flex-shrink: 0;
+}
+
+.row {
+  display: flex;
+  gap: 6px;
+  flex-direction: row-reverse;
+}
+
+.shake {
+  animation: shake 0.3s ease;
+}
+
+@keyframes shake {
+  10%,
+  90% {
+    transform: translateX(-2px);
+  }
+  20%,
+  80% {
+    transform: translateX(3px);
+  }
+  30%,
+  50%,
+  70% {
+    transform: translateX(-5px);
+  }
+  40%,
+  60% {
+    transform: translateX(5px);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .shake {
+    animation: none;
+  }
+}

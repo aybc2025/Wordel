@@ -1,0 +1,63 @@
+.handoff {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 20px 26px calc(20px + env(safe-area-inset-bottom));
+  gap: 16px;
+  overflow-y: auto;
+  animation: fadeIn 0.35s ease;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.medal {
+  font-size: 48px;
+}
+
+.heading {
+  font-size: 22px;
+  margin: 0;
+  font-weight: 800;
+}
+
+.subtext {
+  color: var(--muted);
+  font-size: 14px;
+  margin: 0;
+  line-height: 1.6;
+}
+
+.word {
+  color: var(--paper);
+}
+
+.secondaryBtn {
+  background: transparent;
+  border: 1.5px solid var(--line);
+  color: var(--paper);
+  border-radius: 12px;
+  padding: 12px 22px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  width: 100%;
+  font-family: inherit;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .handoff {
+    animation: none;
+  }
+}

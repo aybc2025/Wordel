@@ -1,0 +1,63 @@
+.keyboard {
+  margin-top: auto;
+  padding: 10px 8px calc(16px + env(safe-area-inset-bottom));
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  flex-shrink: 0;
+}
+
+.row {
+  display: flex;
+  gap: 6px;
+  justify-content: center;
+  flex-direction: row-reverse;
+}
+
+.key {
+  background: var(--ink-2);
+  color: var(--paper);
+  border: none;
+  border-radius: 6px;
+  font-size: 15px;
+  font-weight: 700;
+  height: 46px;
+  min-width: 32px;
+  flex: 1;
+  max-width: 38px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: background 0.1s ease, transform 0.1s ease;
+  font-family: inherit;
+}
+
+.key:active {
+  transform: scale(0.93);
+}
+
+.key:disabled {
+  opacity: 0.5;
+  cursor: default;
+}
+
+.wide {
+  max-width: 56px;
+  font-size: 12px;
+}
+
+.correct {
+  background: var(--green);
+  color: var(--paper);
+}
+
+.present {
+  background: var(--ochre);
+  color: var(--ink);
+}
+
+.absent {
+  background: var(--slate-fill);
+  color: var(--muted);
+}

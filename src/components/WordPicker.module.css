@@ -1,0 +1,84 @@
+.picker {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  width: 100%;
+}
+
+.toggleRow {
+  display: flex;
+  background: var(--ink-2);
+  border-radius: 10px;
+  padding: 4px;
+  gap: 4px;
+}
+
+.toggleOpt {
+  flex: 1;
+  text-align: center;
+  padding: 10px 0;
+  border-radius: 7px;
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--muted);
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-family: inherit;
+}
+
+.toggleOpt.active {
+  background: var(--coral);
+  color: #fff;
+}
+
+.input {
+  background: var(--ink-2);
+  border: 1.5px solid var(--line);
+  border-radius: 10px;
+  padding: 14px;
+  color: var(--paper);
+  font-size: 20px;
+  text-align: center;
+  letter-spacing: 6px;
+  font-weight: 700;
+  font-family: inherit;
+}
+
+.input:focus {
+  outline: none;
+  border-color: var(--coral);
+}
+
+.checkboxRow {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  justify-content: center;
+  color: var(--muted);
+  font-size: 14px;
+  padding: 10px 0;
+}
+
+.error {
+  color: var(--coral);
+  font-size: 13px;
+  text-align: center;
+  margin: 0;
+}
+
+.confirmBtn {
+  background: var(--coral);
+  color: #fff;
+  border: none;
+  border-radius: 12px;
+  padding: 14px 22px;
+  font-size: 15px;
+  font-weight: 700;
+  cursor: pointer;
+  font-family: inherit;
+}
+
+.confirmBtn:active {
+  transform: scale(0.98);
+}

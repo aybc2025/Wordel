@@ -1,0 +1,39 @@
+{
+  "name": "וורדעל",
+  "short_name": "וורדעל",
+  "description": "משחק ניחוש מילים בעברית, בלי מילה יומית קבועה — בוחרים מילה ומשחקים כמה סבבים שרוצים.",
+  "start_url": ".",
+  "scope": ".",
+  "display": "standalone",
+  "background_color": "#1B1F23",
+  "theme_color": "#1B1F23",
+  "orientation": "portrait",
+  "dir": "rtl",
+  "lang": "he",
+  "icons": [
+    {
+      "src": "icons/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "icons/icon-192-maskable.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "maskable"
+    },
+    {
+      "src": "icons/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "icons/icon-512-maskable.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ]
+}

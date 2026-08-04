@@ -147,8 +147,10 @@ so it still draws from the whole bank. Don't "unify" these without asking.
 `lastEvent = { kind, payload, nonce }`, where `nonce` is a monotonic counter.
 `App.jsx` watches `lastEvent` in a `useEffect` keyed on the whole object
 (not on `nonce` alone, since React needs the object identity to change) and
-reacts to `kind` — currently just `invalid-length` / `invalid-word` to
-trigger the row-shake. `win` / `lose` / `guess-submitted` events are emitted
+reacts to `kind` — currently `invalid-length` / `invalid-word`, which trigger
+both the row-shake and the `<Toast/>` message explaining *why* the guess
+bounced (a bare shake reads as "the app is broken", which is exactly how it was
+reported). `win` / `lose` / `guess-submitted` events are emitted
 but not yet consumed by anything animation-specific beyond the tile flip,
 which is pure CSS keyed off `status` prop changes on `<Tile/>`, not off the
 event channel at all. If future animation work wants to react to `win`
@@ -199,7 +201,11 @@ registered at all.
   final letter in a non-final position (`אבןות`, `דרךים` — the exact
   naive-concatenation artifacts described below, which had been recorded as
   discarded but were still shipping) were removed, and 7 correctly-spelled
-  replacements added. **If asked to "finish" or "expand" the word bank later, that's real,
+  replacements added. It then grew to 502 via `build_words_he_extra.cjs` (repo
+  root, kept for reuse), after a player hit the shake on ordinary words —
+  `אנשים` and `דגלים` were both missing. That script enforces the rules below
+  mechanically and prints every rejection. **502 is still small**; expect more
+  legitimate words to be refused, and treat further expansion as wanted work. **If asked to "finish" or "expand" the word bank later, that's real,
   wanted follow-up work — not a bug to silently work around.** Any
   expansion must go through the same validation discipline: every candidate
   checked for exact 5-letter length using `HEBREW_LETTERS` set membership

@@ -12,6 +12,18 @@
 "common": true
 },
 {
+"word": "אגסים",
+"common": true
+},
+{
+"word": "אהבתי",
+"common": true
+},
+{
+"word": "אוכלת",
+"common": true
+},
+{
 "word": "אולפן",
 "common": true
 },
@@ -25,6 +37,10 @@
 },
 {
 "word": "אחיות",
+"common": true
+},
+{
+"word": "איטית",
 "common": true
 },
 {
@@ -44,7 +60,19 @@
 "common": true
 },
 {
+"word": "אמרנו",
+"common": true
+},
+{
+"word": "אמרתי",
+"common": true
+},
+{
 "word": "אנטנה",
+"common": true
+},
+{
+"word": "אנשים",
 "common": true
 },
 {
@@ -65,6 +93,10 @@
 },
 {
 "word": "ארוחת",
+"common": true
+},
+{
+"word": "ארוכה",
 "common": true
 },
 {
@@ -112,6 +144,10 @@
 "common": true
 },
 {
+"word": "ביצים",
+"common": true
+},
+{
 "word": "בישול",
 "common": true
 },
@@ -128,7 +164,23 @@
 "common": true
 },
 {
+"word": "בניין",
+"common": true
+},
+{
+"word": "בננות",
+"common": true
+},
+{
 "word": "בנקים",
+"common": true
+},
+{
+"word": "בעיות",
+"common": true
+},
+{
+"word": "בצלים",
 "common": true
 },
 {
@@ -156,12 +208,36 @@
 "common": true
 },
 {
+"word": "גבוהה",
+"common": true
+},
+{
+"word": "גבינה",
+"common": true
+},
+{
+"word": "גבעות",
+"common": true
+},
+{
+"word": "גברים",
+"common": true
+},
+{
+"word": "גדולה",
+"common": true
+},
+{
 "word": "גזעות",
 "common": false
 },
 {
 "word": "גזעים",
 "common": false
+},
+{
+"word": "גזרים",
+"common": true
 },
 {
 "word": "גיהוץ",
@@ -204,11 +280,19 @@
 "common": true
 },
 {
+"word": "גשרים",
+"common": true
+},
+{
 "word": "דבורה",
 "common": true
 },
 {
 "word": "דברים",
+"common": true
+},
+{
+"word": "דגלים",
 "common": true
 },
 {
@@ -229,6 +313,10 @@
 },
 {
 "word": "דירוג",
+"common": true
+},
+{
+"word": "דירות",
 "common": true
 },
 {
@@ -268,11 +356,19 @@
 "common": true
 },
 {
+"word": "הולכת",
+"common": true
+},
+{
 "word": "הופעה",
 "common": true
 },
 {
 "word": "הוצאה",
+"common": true
+},
+{
+"word": "הורים",
 "common": true
 },
 {
@@ -288,11 +384,23 @@
 "common": true
 },
 {
+"word": "הייתי",
+"common": true
+},
+{
 "word": "הכנסה",
 "common": true
 },
 {
 "word": "הליכה",
+"common": true
+},
+{
+"word": "הלכנו",
+"common": true
+},
+{
+"word": "הלכתי",
 "common": true
 },
 {
@@ -380,6 +488,14 @@
 "common": true
 },
 {
+"word": "זוכרת",
+"common": true
+},
+{
+"word": "זולים",
+"common": true
+},
+{
 "word": "זיהום",
 "common": true
 },
@@ -420,7 +536,19 @@
 "common": true
 },
 {
+"word": "חדרים",
+"common": true
+},
+{
 "word": "חדשות",
+"common": true
+},
+{
+"word": "חדשים",
+"common": true
+},
+{
+"word": "חוויה",
 "common": true
 },
 {
@@ -456,7 +584,15 @@
 "common": true
 },
 {
+"word": "חושבת",
+"common": true
+},
+{
 "word": "חותמת",
+"common": true
+},
+{
+"word": "חזקים",
 "common": true
 },
 {
@@ -492,6 +628,10 @@
 "common": true
 },
 {
+"word": "חלשים",
+"common": true
+},
+{
 "word": "חנוכה",
 "common": true
 },
@@ -516,6 +656,10 @@
 "common": true
 },
 {
+"word": "חשבתי",
+"common": true
+},
+{
 "word": "חשיבה",
 "common": true
 },
@@ -525,6 +669,14 @@
 },
 {
 "word": "חתימה",
+"common": true
+},
+{
+"word": "טבחים",
+"common": true
+},
+{
+"word": "טובים",
 "common": true
 },
 {
@@ -544,7 +696,19 @@
 "common": true
 },
 {
+"word": "ידיים",
+"common": true
+},
+{
 "word": "ידיעה",
+"common": true
+},
+{
+"word": "ידעתי",
+"common": true
+},
+{
+"word": "יושבת",
 "common": true
 },
 {
@@ -568,12 +732,28 @@
 "common": true
 },
 {
+"word": "יכולה",
+"common": true
+},
+{
 "word": "ילדות",
 "common": false
 },
 {
 "word": "ילדים",
 "common": false
+},
+{
+"word": "יערות",
+"common": true
+},
+{
+"word": "יקרים",
+"common": true
+},
+{
+"word": "ירוקה",
+"common": true
 },
 {
 "word": "ירחות",
@@ -592,11 +772,23 @@
 "common": true
 },
 {
+"word": "ישנים",
+"common": true
+},
+{
 "word": "כבידה",
 "common": true
 },
 {
 "word": "כביסה",
+"common": true
+},
+{
+"word": "כועסת",
+"common": true
+},
+{
+"word": "כותבת",
 "common": true
 },
 {
@@ -616,6 +808,10 @@
 "common": true
 },
 {
+"word": "כיתות",
+"common": true
+},
+{
 "word": "כלבות",
 "common": false
 },
@@ -628,6 +824,14 @@
 "common": true
 },
 {
+"word": "כספים",
+"common": true
+},
+{
+"word": "כפרים",
+"common": true
+},
+{
 "word": "כפתור",
 "common": true
 },
@@ -636,11 +840,39 @@
 "common": true
 },
 {
+"word": "כתבתי",
+"common": true
+},
+{
+"word": "לבבות",
+"common": true
+},
+{
+"word": "לבנים",
+"common": true
+},
+{
+"word": "לומדת",
+"common": true
+},
+{
+"word": "לילות",
+"common": true
+},
+{
+"word": "למדתי",
+"common": true
+},
+{
 "word": "למידה",
 "common": true
 },
 {
 "word": "לעולם",
+"common": true
+},
+{
+"word": "מבינה",
 "common": true
 },
 {
@@ -656,6 +888,10 @@
 "common": true
 },
 {
+"word": "מדברת",
+"common": true
+},
+{
 "word": "מדינה",
 "common": true
 },
@@ -665,6 +901,10 @@
 },
 {
 "word": "מדרכה",
+"common": true
+},
+{
+"word": "מהירה",
 "common": true
 },
 {
@@ -704,6 +944,14 @@
 "common": true
 },
 {
+"word": "מטרות",
+"common": true
+},
+{
+"word": "מיטות",
+"common": true
+},
+{
 "word": "מילון",
 "common": true
 },
@@ -713,6 +961,10 @@
 },
 {
 "word": "מינרל",
+"common": true
+},
+{
+"word": "מיצים",
 "common": true
 },
 {
@@ -836,7 +1088,15 @@
 "common": true
 },
 {
+"word": "מרפסת",
+"common": true
+},
+{
 "word": "מרקחת",
+"common": true
+},
+{
+"word": "מרקים",
 "common": true
 },
 {
@@ -869,6 +1129,10 @@
 },
 {
 "word": "משקפי",
+"common": true
+},
+{
+"word": "מתנות",
 "common": true
 },
 {
@@ -912,7 +1176,23 @@
 "common": true
 },
 {
+"word": "נכדים",
+"common": true
+},
+{
+"word": "נמוכה",
+"common": true
+},
+{
+"word": "נמלים",
+"common": true
+},
+{
 "word": "נסיעה",
+"common": true
+},
+{
+"word": "נסעתי",
 "common": true
 },
 {
@@ -940,6 +1220,10 @@
 "common": true
 },
 {
+"word": "סיבות",
+"common": true
+},
+{
 "word": "סיבים",
 "common": true
 },
@@ -957,6 +1241,10 @@
 },
 {
 "word": "סירופ",
+"common": true
+},
+{
+"word": "סלטים",
 "common": true
 },
 {
@@ -1012,6 +1300,22 @@
 "common": true
 },
 {
+"word": "עובדת",
+"common": true
+},
+{
+"word": "עוגות",
+"common": true
+},
+{
+"word": "עומדת",
+"common": true
+},
+{
+"word": "עונות",
+"common": true
+},
+{
 "word": "עופות",
 "common": true
 },
@@ -1021,6 +1325,14 @@
 },
 {
 "word": "עיגול",
+"common": true
+},
+{
+"word": "עייפה",
+"common": true
+},
+{
+"word": "עיירה",
 "common": true
 },
 {
@@ -1076,6 +1388,10 @@
 "common": false
 },
 {
+"word": "ענבים",
+"common": true
+},
+{
 "word": "עניבה",
 "common": true
 },
@@ -1088,6 +1404,10 @@
 "common": true
 },
 {
+"word": "עפרון",
+"common": true
+},
+{
 "word": "עפרות",
 "common": false
 },
@@ -1097,6 +1417,10 @@
 },
 {
 "word": "עצבני",
+"common": true
+},
+{
+"word": "עצובה",
 "common": true
 },
 {
@@ -1120,6 +1444,10 @@
 "common": true
 },
 {
+"word": "עשיתי",
+"common": true
+},
+{
 "word": "פגישה",
 "common": true
 },
@@ -1133,6 +1461,10 @@
 },
 {
 "word": "פיסול",
+"common": true
+},
+{
+"word": "פירות",
 "common": true
 },
 {
@@ -1176,11 +1508,19 @@
 "common": true
 },
 {
+"word": "פתרון",
+"common": true
+},
+{
 "word": "צביעה",
 "common": true
 },
 {
 "word": "צבעים",
+"common": true
+},
+{
+"word": "צהובה",
 "common": true
 },
 {
@@ -1220,6 +1560,10 @@
 "common": true
 },
 {
+"word": "צריכה",
+"common": true
+},
+{
 "word": "קולות",
 "common": false
 },
@@ -1232,7 +1576,15 @@
 "common": true
 },
 {
+"word": "קוראת",
+"common": true
+},
+{
 "word": "קורות",
+"common": true
+},
+{
+"word": "קטנים",
 "common": true
 },
 {
@@ -1268,11 +1620,31 @@
 "common": true
 },
 {
+"word": "קצרים",
+"common": true
+},
+{
+"word": "קראתי",
+"common": true
+},
+{
 "word": "קרסול",
 "common": true
 },
 {
 "word": "ראיון",
+"common": true
+},
+{
+"word": "ראינו",
+"common": true
+},
+{
+"word": "ראיתי",
+"common": true
+},
+{
+"word": "ראשים",
 "common": true
 },
 {
@@ -1300,6 +1672,14 @@
 "common": true
 },
 {
+"word": "רוצים",
+"common": true
+},
+{
+"word": "רוקדת",
+"common": true
+},
+{
 "word": "ריאות",
 "common": true
 },
@@ -1320,6 +1700,14 @@
 "common": true
 },
 {
+"word": "רעיון",
+"common": true
+},
+{
+"word": "רציתי",
+"common": true
+},
+{
 "word": "שאיפה",
 "common": true
 },
@@ -1337,6 +1725,10 @@
 },
 {
 "word": "שולחן",
+"common": true
+},
+{
+"word": "שחורה",
 "common": true
 },
 {
@@ -1380,6 +1772,10 @@
 "common": true
 },
 {
+"word": "שירים",
+"common": true
+},
+{
 "word": "שכונה",
 "common": true
 },
@@ -1396,7 +1792,27 @@
 "common": true
 },
 {
+"word": "שמחים",
+"common": true
+},
+{
+"word": "שמיים",
+"common": true
+},
+{
 "word": "שמיכה",
+"common": true
+},
+{
+"word": "שמלות",
+"common": true
+},
+{
+"word": "שמענו",
+"common": true
+},
+{
+"word": "שמעתי",
 "common": true
 },
 {
@@ -1489,6 +1905,10 @@
 },
 {
 "word": "תחזית",
+"common": true
+},
+{
+"word": "תחנות",
 "common": true
 },
 {

@@ -1,0 +1,38 @@
+/* Rendered in the flex gap between the board and the keyboard. That space is
+   always empty (the keyboard is pinned down with margin-top: auto), so showing
+   the toast consumes slack rather than shifting the board or keyboard — and it
+   never covers the player's previous guesses the way a top overlay did. */
+.toast {
+  align-self: center;
+  margin: 8px 0;
+  background: var(--paper);
+  color: var(--ink);
+  padding: 10px 18px;
+  border-radius: 10px;
+  font-size: 14px;
+  font-weight: 700;
+  text-align: center;
+  max-width: min(90vw, 340px);
+  box-shadow: 0 6px 20px rgb(0 0 0 / 0.35);
+  /* Only the slide is animated, never opacity: animating opacity from 0 means
+     the message is invisible until the animation actually advances, so a
+     dropped or queued first frame hides it entirely. */
+  opacity: 1;
+  animation: toastIn 0.15s ease;
+  pointer-events: none;
+}
+
+@keyframes toastIn {
+  from {
+    transform: translateY(-6px);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .toast {
+    animation: none;
+  }
+}

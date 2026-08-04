@@ -5,6 +5,8 @@ import Keyboard from "./components/Keyboard";
 import HandoffScreen from "./components/HandoffScreen";
 import MenuDrawer from "./components/MenuDrawer";
 import UpdateBanner from "./components/UpdateBanner";
+import Toast from "./components/Toast";
+import { WORD_LENGTH } from "./config/constants";
 import { useWordBank } from "./hooks/useWordBank";
 import { useGameEngine } from "./hooks/useGameEngine";
 import { useStats } from "./hooks/useStats";
@@ -23,6 +25,7 @@ export default function App({ updateAvailable, onUpdate }) {
   const [menuOpen, setMenuOpen] = useState(false);
   const [commonOnly, setCommonOnly] = useState(() => config.defaultCommonOnly);
   const [shakeRow, setShakeRow] = useState(null);
+  const [message, setMessage] = useState("");
   const recordedRef = useRef(false);
 
   // Pick a word once the word bank has loaded. Also covers a language switch,
@@ -43,8 +46,18 @@ export default function App({ updateAvailable, onUpdate }) {
 
     if (kind === "invalid-length" || kind === "invalid-word") {
       setShakeRow(engine.submittedGuesses.length);
-      const t = setTimeout(() => setShakeRow(null), 320);
-      return () => clearTimeout(t);
+      // The shake alone doesn't say *why* the guess bounced — spell it out.
+      setMessage(
+        kind === "invalid-length"
+          ? t("errWrongLength", WORD_LENGTH)
+          : t("errNotInBank")
+      );
+      const shakeTimer = setTimeout(() => setShakeRow(null), 320);
+      const messageTimer = setTimeout(() => setMessage(""), 1800);
+      return () => {
+        clearTimeout(shakeTimer);
+        clearTimeout(messageTimer);
+      };
     }
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [engine.lastEvent]);
@@ -79,6 +92,7 @@ export default function App({ updateAvailable, onUpdate }) {
   const handleStartNewRound = useCallback(
     (word) => {
       setTargetWord(word);
+      setMessage("");
       engine.reset();
     },
     [engine]
@@ -89,6 +103,7 @@ export default function App({ updateAvailable, onUpdate }) {
     const word = pickRandomWord(commonOnly);
     if (word) {
       setTargetWord(word);
+      setMessage("");
       engine.reset();
     }
   }, [pickRandomWord, commonOnly, engine]);
@@ -100,6 +115,7 @@ export default function App({ updateAvailable, onUpdate }) {
     (next) => {
       if (next === lang) return;
       setTargetWord(null);
+      setMessage("");
       engine.reset();
       setCommonOnly(getLanguage(next).defaultCommonOnly);
       setLang(next);
@@ -140,6 +156,7 @@ export default function App({ updateAvailable, onUpdate }) {
             currentInput={engine.currentInput}
             shakeRow={shakeRow}
           />
+          <Toast message={message} />
           <Keyboard
             onLetter={handleLetter}
             onBackspace={handleBackspace}

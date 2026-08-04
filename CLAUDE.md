@@ -66,8 +66,12 @@ public/
                        service worker's network-first rule matches both via
                        WORD_BANK_RE, so a third language needs no SW change.
   manifest.json        PWA manifest.
-  service-worker.js    Hand-written (not Workbox) — cache-first for the app
-                       shell/assets, network-first for words.json specifically.
+  service-worker.js    Hand-written (not Workbox). Routing rules, in order:
+                       navigations/index.html and the word banks are
+                       NETWORK-FIRST (cache is the offline fallback);
+                       /assets/*.[hash].{js,css} and everything else is
+                       cache-first. See the caching note below before
+                       changing any of this.
   icons/                Generated via generate_icons.py (kept in repo root,
                        not part of the build — a one-off asset script).
 
@@ -150,6 +154,32 @@ which is pure CSS keyed off `status` prop changes on `<Tile/>`, not off the
 event channel at all. If future animation work wants to react to `win`
 specifically (confetti, etc.), add it to that same effect — don't give
 `useGameEngine` a new callback prop for it.
+
+### Service worker caching — the shell must never be cache-first
+
+`index.html` is the one file that must always be fetched network-first. Vite
+emits content-hashed bundles (`index-<hash>.js`) and deletes the old ones on
+each deploy, so a cached `index.html` points at filenames that no longer exist
+— the module 404s and the app is a blank page until the user clears storage.
+This actually shipped and broke the live site: the symptom was
+`A ServiceWorker intercepted the request and encountered an unexpected error`
+naming an asset hash from a *previous* deploy. Hashed assets under `/assets/`
+are the opposite case — immutable per URL, so cache-first is correct there.
+
+Two supporting rules, both learned the hard way:
+- Every `respondWith` branch needs a `.catch`. A rejected promise inside the
+  fetch handler surfaces to the page as that opaque "unexpected error" instead
+  of a normal network failure.
+- Precaching uses individual `cache.put`s wrapped in `Promise.allSettled`, not
+  `cache.addAll`. `addAll` is atomic, so one missing file fails the whole
+  install and leaves the *previous* (possibly broken) worker in control
+  indefinitely — exactly when you most need the new one to take over.
+
+`registerServiceWorker` checks `document.readyState` before falling back to a
+`load` listener. It's called from React's render, which under React 18's
+concurrent scheduling can run after `load` has already fired; the original
+listener-only version then never fired and the worker silently never
+registered at all.
 
 ## Intentional decisions — do not revert without asking
 

@@ -8,17 +8,18 @@ import { normalizeWord } from "./normalizeHebrew";
  *   Pass 2: for remaining letters, mark PRESENT if the letter is still
  *           available in the remaining pool, else ABSENT.
  *
- * Both guess and target are normalized (final letters → regular) before
- * comparison, so ך/כ etc. behave identically.
+ * Both guess and target are normalized before comparison, so in Hebrew ך/כ
+ * etc. behave identically and in English case is irrelevant.
  *
  * @param {string} guess - the guessed word (raw, as typed)
  * @param {string} target - the target word (raw, as stored in word bank)
+ * @param {string} [langCode] - "he" (default) or "en"
  * @returns {{ letter: string, status: string }[]} per-letter result, in order
  */
-export function evaluateGuess(guess, target) {
+export function evaluateGuess(guess, target, langCode = "he") {
   const guessLetters = guess.split("");
-  const normGuess = normalizeWord(guess).split("");
-  const normTarget = normalizeWord(target).split("");
+  const normGuess = normalizeWord(guess, langCode).split("");
+  const normTarget = normalizeWord(target, langCode).split("");
 
   const result = new Array(WORD_LENGTH).fill(null);
   const pool = [...normTarget]; // mutable pool of letters still available to match

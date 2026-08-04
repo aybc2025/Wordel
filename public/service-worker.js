@@ -1,11 +1,20 @@
 // Bump this on every release to force cache invalidation.
-const CACHE_VERSION = "wordel-v1";
+const CACHE_VERSION = "wordel-v2";
 const CACHE_NAME = `${CACHE_VERSION}`;
 
 // Precached app shell. Vite's hashed build assets are added at runtime
 // via the fetch handler's cache-first strategy below, since their exact
 // filenames aren't known until build time.
-const PRECACHE_URLS = ["./", "./index.html", "./manifest.json", "./words.json"];
+const PRECACHE_URLS = [
+  "./",
+  "./index.html",
+  "./manifest.json",
+  "./words.json",
+  "./words-en.json",
+];
+
+// Matches any language's word bank: words.json, words-en.json, ...
+const WORD_BANK_RE = /\/words(-[a-z]{2})?\.json$/;
 
 self.addEventListener("install", (event) => {
   event.waitUntil(
@@ -46,7 +55,7 @@ self.addEventListener("fetch", (event) => {
 
   // Network-first for the word bank data, so word-list updates propagate
   // quickly when online, but still fall back to cache when offline.
-  if (url.pathname.endsWith("words.json")) {
+  if (WORD_BANK_RE.test(url.pathname)) {
     event.respondWith(
       fetch(request)
         .then((response) => {

@@ -1,14 +1,27 @@
-import { KEYBOARD_LAYOUT, TILE_STATUS } from "../config/constants";
+import { TILE_STATUS } from "../config/constants";
+import { getLanguage } from "../config/languages";
 import styles from "./Keyboard.module.css";
 
 /**
- * On-screen Hebrew keyboard. Keys are colored by their best-known status
- * across all submitted guesses (keyStatuses from the game engine).
+ * On-screen keyboard for the active language. Keys are colored by their
+ * best-known status across all submitted guesses (keyStatuses from the game
+ * engine). Row order is authored left-to-right and pinned that way in CSS —
+ * see Keyboard.module.css.
  */
-export default function Keyboard({ onLetter, onBackspace, onEnter, keyStatuses, disabled }) {
+export default function Keyboard({
+  onLetter,
+  onBackspace,
+  onEnter,
+  keyStatuses,
+  disabled,
+  langCode,
+  t,
+}) {
+  const layout = getLanguage(langCode).keyboard;
+
   return (
     <div className={styles.keyboard}>
-      {KEYBOARD_LAYOUT.map((row, rowIndex) => (
+      {layout.map((row, rowIndex) => (
         <div className={styles.row} key={rowIndex}>
           {row.map((key) => {
             if (key === "ENTER") {
@@ -18,10 +31,10 @@ export default function Keyboard({ onLetter, onBackspace, onEnter, keyStatuses, 
                   className={[styles.key, styles.wide].join(" ")}
                   onClick={onEnter}
                   disabled={disabled}
-                  aria-label="שלח ניחוש"
+                  aria-label={t("submitGuess")}
                   type="button"
                 >
-                  אישור
+                  {t("enterKey")}
                 </button>
               );
             }
@@ -32,7 +45,7 @@ export default function Keyboard({ onLetter, onBackspace, onEnter, keyStatuses, 
                   className={[styles.key, styles.wide].join(" ")}
                   onClick={onBackspace}
                   disabled={disabled}
-                  aria-label="מחק אות"
+                  aria-label={t("deleteLetter")}
                   type="button"
                 >
                   ⌫

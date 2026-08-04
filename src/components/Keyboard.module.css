@@ -7,11 +7,14 @@
   flex-shrink: 0;
 }
 
+/* Keyboard rows are pinned LTR in both languages: physical Hebrew and QWERTY
+   layouts are both read left-to-right (Hebrew's top row starts with ק on the
+   left), so key order must not follow the document's `dir`. */
 .row {
   display: flex;
   gap: 6px;
   justify-content: center;
-  flex-direction: row-reverse;
+  direction: ltr;
 }
 
 .key {

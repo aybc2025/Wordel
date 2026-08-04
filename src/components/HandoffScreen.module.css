@@ -39,8 +39,11 @@
   line-height: 1.6;
 }
 
+/* English words are stored lowercase but played on an uppercase keyboard, so
+   the reveal is upper-cased to match the tiles. No effect on Hebrew. */
 .word {
   color: var(--paper);
+  text-transform: uppercase;
 }
 
 .secondaryBtn {

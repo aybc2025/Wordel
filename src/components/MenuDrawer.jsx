@@ -1,3 +1,4 @@
+import { LANGUAGES } from "../config/languages";
 import styles from "./MenuDrawer.module.css";
 
 export default function MenuDrawer({
@@ -9,6 +10,10 @@ export default function MenuDrawer({
   onToggleCommonOnly,
   stats,
   onResetStats,
+  lang,
+  onChangeLang,
+  locale,
+  t,
 }) {
   if (!open) return null;
 
@@ -19,19 +24,50 @@ export default function MenuDrawer({
     <div className={styles.overlay} onClick={onClose}>
       <div className={styles.drawer} onClick={(e) => e.stopPropagation()}>
         <div className={styles.drawerHeader}>
-          <button className={styles.closeBtn} onClick={onClose} type="button" aria-label="סגור תפריט">
+          <button
+            className={styles.closeBtn}
+            onClick={onClose}
+            type="button"
+            aria-label={t("closeMenu")}
+          >
             ✕
           </button>
-          <h2 className={styles.drawerTitle}>תפריט</h2>
+          <h2 className={styles.drawerTitle}>{t("menuTitle")}</h2>
           <span />
         </div>
 
         <section className={styles.section}>
-          <h3 className={styles.sectionTitle}>מאגר המילים</h3>
+          <h3 className={styles.sectionTitle}>{t("languageSection")}</h3>
+          <div className={styles.toggleRow}>
+            {Object.values(LANGUAGES).map((entry) => (
+              <button
+                key={entry.code}
+                className={[
+                  styles.toggleOpt,
+                  lang === entry.code ? styles.active : "",
+                ]
+                  .filter(Boolean)
+                  .join(" ")}
+                onClick={() => onChangeLang(entry.code)}
+                type="button"
+                lang={entry.code}
+                aria-pressed={lang === entry.code}
+              >
+                {entry.label}
+              </button>
+            ))}
+          </div>
+          <p className={styles.sectionText}>{t("languageHint")}</p>
+        </section>
+
+        <section className={styles.section}>
+          <h3 className={styles.sectionTitle}>{t("wordBankSection")}</h3>
           <p className={styles.sectionText}>
-            {totalCount.toLocaleString("he")} מילים בנות 5 אותיות במאגר, מתוכן{" "}
-            {commonCount.toLocaleString("he")} מסומנות כנפוצות. אפשר לצמצם את
-            ההגרלה האקראית למילים נפוצות בלבד:
+            {t(
+              "wordBankText",
+              totalCount.toLocaleString(locale),
+              commonCount.toLocaleString(locale)
+            )}
           </p>
           <div className={styles.toggleRow}>
             <button
@@ -41,7 +77,7 @@ export default function MenuDrawer({
               onClick={() => onToggleCommonOnly(false)}
               type="button"
             >
-              כל המאגר
+              {t("wholeBank")}
             </button>
             <button
               className={[styles.toggleOpt, commonOnly ? styles.active : ""]
@@ -50,19 +86,18 @@ export default function MenuDrawer({
               onClick={() => onToggleCommonOnly(true)}
               type="button"
             >
-              מילים נפוצות
+              {t("commonWords")}
             </button>
           </div>
         </section>
 
         <section className={styles.section}>
-          <h3 className={styles.sectionTitle}>סטטיסטיקות מכשיר</h3>
+          <h3 className={styles.sectionTitle}>{t("statsSection")}</h3>
           <p className={styles.sectionText}>
-            סה"כ סבבים: {stats.totalRounds} · אחוז ניצחון: {winPct}% · רצף
-            נוכחי: {stats.currentStreak}
+            {t("statsText", stats.totalRounds, winPct, stats.currentStreak)}
           </p>
           <button className={styles.resetBtn} onClick={onResetStats} type="button">
-            אפס סטטיסטיקות
+            {t("resetStats")}
           </button>
         </section>
       </div>

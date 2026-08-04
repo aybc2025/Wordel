@@ -59,9 +59,12 @@ Likely first-build friction points, roughly in order of likelihood:
 
 ```
 public/
-  words.json          Static word bank, fetched once at runtime by useWordBank.
+  words.json          Hebrew word bank, fetched at runtime by useWordBank.
                        Network-first in the service worker so updates to this
                        file propagate quickly when online.
+  words-en.json        English word bank, same {word, common} shape. The
+                       service worker's network-first rule matches both via
+                       WORD_BANK_RE, so a third language needs no SW change.
   manifest.json        PWA manifest.
   service-worker.js    Hand-written (not Workbox) — cache-first for the app
                        shell/assets, network-first for words.json specifically.
@@ -92,10 +95,47 @@ src/
     normalizeHebrew.js   Final-letter normalization (ך→כ etc.) for
                         comparison only; display always uses the raw
                         typed/stored letter.
-  config/constants.js   WORD_LENGTH, MAX_GUESSES, KEYBOARD_LAYOUT, storage
-                        keys. Single source of truth — nothing hardcodes
-                        "5" or "6" outside here.
+  config/constants.js   WORD_LENGTH, MAX_GUESSES, storage keys. Single source
+                        of truth — nothing hardcodes "5" or "6" outside here.
+  config/languages.js   Per-language config: dir, locale, word bank file,
+                        keyboard layout, accepted letters, defaultCommonOnly.
+                        Adding a language = one entry here + one strings table.
+  config/strings.js     UI copy per language. Values are strings or functions
+                        (for interpolation); components only ever call
+                        t("key", ...args) — never concatenate sentences.
 ```
+
+### Bilingual (Hebrew / English)
+
+`useLanguage` owns the active language, persists it to localStorage, and syncs
+`document.documentElement.lang`/`dir` + `document.title`. `index.html` has a
+tiny inline script that pre-applies a stored `en` before first paint, so an
+English player never sees a frame of RTL. `t` and `langCode` are passed down as
+explicit props (no context) — consistent with how the rest of the app already
+threads callbacks from `App.jsx`.
+
+Direction rules, which are easy to get wrong:
+- **Board rows use a plain `flex-direction: row`** and inherit the document
+  `dir`. Inside `dir="rtl"` that already fills right-to-left. An explicit
+  `row-reverse` here double-flips RTL back into LTR — that was a real bug.
+- **Keyboard rows are pinned `direction: ltr`.** Both a physical Hebrew
+  keyboard and QWERTY are read left-to-right (Hebrew's top row starts with ק on
+  the left), so key order must *not* follow `dir`.
+
+Comparison normalization is language-aware: `normalizeWord(word, langCode)`
+does final-letter folding for Hebrew and case-folding for English. English
+words are stored lowercase in the bank but played on an uppercase keyboard;
+`canonicalizeLetter` upper-cases physical keypresses so both input paths agree.
+
+Switching language abandons the current round (the target word belongs to the
+other bank) and redraws once the new bank loads — `App.jsx` clears `targetWord`
+to `null` and the existing "pick a word" effect handles the rest.
+
+**`defaultCommonOnly` differs per language on purpose.** The English bank is
+deliberately broad (~1,550) so typed guesses are rarely rejected, but most of
+that breadth is unfair as an *answer*, so English draws from the ~595-word
+common tier by default. Hebrew's bank is almost entirely everyday vocabulary,
+so it still draws from the whole bank. Don't "unify" these without asking.
 
 ### Event-channel pattern (animation)
 
@@ -118,14 +158,18 @@ specifically (confetti, etc.), add it to that same effect — don't give
   data that needs to leave the device. Don't add a backend "for sync"
   without checking with the user first — it's a deliberate scope cut, not
   an oversight.
-- **Word bank is ~410 words, not the ~4,000 originally scoped.** The spec
+- **Hebrew word bank is 397 words, not the ~4,000 originally scoped.** The spec
   promised ~4,000 curated Hebrew 5-letter words; the build environment had
   no network access and no local Hebrew dictionary/corpus to draw from, so
   every candidate word had to be manually typed and length-validated. Only
   ~410 survived validation as genuine, correctly-spelled 5-letter words.
   The user was told this directly mid-build and chose to proceed with 410
   rather than wait for a larger hand-curated batch or supply their own word
-  list. **If asked to "finish" or "expand" the word bank later, that's real,
+  list. That dropped to 397 at the first real build: 20 entries carrying a
+  final letter in a non-final position (`אבןות`, `דרךים` — the exact
+  naive-concatenation artifacts described below, which had been recorded as
+  discarded but were still shipping) were removed, and 7 correctly-spelled
+  replacements added. **If asked to "finish" or "expand" the word bank later, that's real,
   wanted follow-up work — not a bug to silently work around.** Any
   expansion must go through the same validation discipline: every candidate
   checked for exact 5-letter length using `HEBREW_LETTERS` set membership
@@ -136,6 +180,13 @@ specifically (confetti, etc.), add it to that same effect — don't give
   the medial form) and was discarded. Real morphology is not just
   concatenation; validate against a real source (dictionary, corpus, or the
   user's own list) rather than generating and hoping.
+- **English bank (~1,556 words) is generated by `build_words_en.cjs` at repo
+  root**, kept for reuse the same way `build_words.py` is. It applies the same
+  discipline: every candidate is checked for exact 5-letter length and a-z
+  membership, duplicates dropped, and anything rejected is *printed* rather
+  than silently swallowed (that report is how 15 bad candidates were caught).
+  It is `.cjs`, not `.js`, because `package.json` sets `"type": "module"`.
+  Regenerate with `node build_words_en.cjs public/words-en.json`.
 - **Final Hebrew letters (ך/ם/ן/ף/ץ) normalize to their regular form for
   guess comparison only**, per explicit user approval in the spec. Display
   still shows whatever was actually typed/stored — only `evaluateGuess`

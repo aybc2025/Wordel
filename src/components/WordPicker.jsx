@@ -1,34 +1,45 @@
 import { useState } from "react";
 import { WORD_LENGTH } from "../config/constants";
+import { getLanguage } from "../config/languages";
 import styles from "./WordPicker.module.css";
 
 /**
  * Lets the winner choose how the next round's word gets picked:
  * type it manually (validated against the word bank) or draw randomly.
  */
-export default function WordPicker({ onConfirm, pickRandomWord, isValidWord }) {
+export default function WordPicker({
+  onConfirm,
+  pickRandomWord,
+  isValidWord,
+  langCode,
+  t,
+}) {
   const [mode, setMode] = useState("manual"); // manual | random
   const [inputValue, setInputValue] = useState("");
   const [error, setError] = useState("");
   const [commonOnly, setCommonOnly] = useState(false);
 
+  const dir = getLanguage(langCode).dir;
+
   function handleManualSubmit() {
     const trimmed = inputValue.trim();
-    if (trimmed.length !== WORD_LENGTH) {
-      setError(`המילה חייבת להיות בת ${WORD_LENGTH} אותיות`);
+    if ([...trimmed].length !== WORD_LENGTH) {
+      setError(t("errWrongLength", WORD_LENGTH));
       return;
     }
     if (!isValidWord(trimmed)) {
-      setError("המילה לא נמצאת במאגר");
+      setError(t("errNotInBank"));
       return;
     }
-    onConfirm(trimmed);
+    // Store in the same form the word bank uses, so the reveal and the
+    // evaluated tiles stay consistent regardless of how it was typed.
+    onConfirm(langCode === "en" ? trimmed.toLowerCase() : trimmed);
   }
 
   function handleRandomSubmit() {
     const word = pickRandomWord(commonOnly);
     if (!word) {
-      setError("מאגר המילים ריק");
+      setError(t("errBankEmpty"));
       return;
     }
     onConfirm(word);
@@ -47,7 +58,7 @@ export default function WordPicker({ onConfirm, pickRandomWord, isValidWord }) {
           }}
           type="button"
         >
-          אני אקליד מילה
+          {t("pickerManual")}
         </button>
         <button
           className={[styles.toggleOpt, mode === "random" ? styles.active : ""]
@@ -59,7 +70,7 @@ export default function WordPicker({ onConfirm, pickRandomWord, isValidWord }) {
           }}
           type="button"
         >
-          הגרלה אקראית
+          {t("pickerRandom")}
         </button>
       </div>
 
@@ -71,9 +82,9 @@ export default function WordPicker({ onConfirm, pickRandomWord, isValidWord }) {
             setInputValue(e.target.value);
             setError("");
           }}
-          placeholder="הקלד/י מילה בת 5 אותיות..."
+          placeholder={t("pickerPlaceholder", WORD_LENGTH)}
           maxLength={WORD_LENGTH}
-          dir="rtl"
+          dir={dir}
           autoComplete="off"
           autoCorrect="off"
           spellCheck={false}
@@ -85,7 +96,7 @@ export default function WordPicker({ onConfirm, pickRandomWord, isValidWord }) {
             checked={commonOnly}
             onChange={(e) => setCommonOnly(e.target.checked)}
           />
-          רק מילים נפוצות
+          {t("pickerCommonOnly")}
         </label>
       )}
 
@@ -96,7 +107,7 @@ export default function WordPicker({ onConfirm, pickRandomWord, isValidWord }) {
         onClick={mode === "manual" ? handleManualSubmit : handleRandomSubmit}
         type="button"
       >
-        התחל/י סבב חדש
+        {t("pickerConfirm")}
       </button>
     </div>
   );

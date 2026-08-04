@@ -9,6 +9,23 @@
     <link rel="icon" type="image/png" sizes="192x192" href="icons/icon-192.png" />
     <link rel="apple-touch-icon" href="icons/icon-192.png" />
     <title>וורדעל</title>
+    <script>
+      // Apply the stored language before first paint, so an English player
+      // doesn't see a frame of RTL layout before React mounts. useLanguage()
+      // is still the source of truth; this only pre-seeds the attributes.
+      (function () {
+        try {
+          var stored = localStorage.getItem("wordel:lang");
+          if (stored === "en") {
+            document.documentElement.lang = "en";
+            document.documentElement.dir = "ltr";
+            document.title = "Wordel";
+          }
+        } catch (e) {
+          /* private mode / storage disabled — fall back to the Hebrew default */
+        }
+      })();
+    </script>
   </head>
   <body>
     <div id="root"></div>

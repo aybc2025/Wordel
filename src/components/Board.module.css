@@ -7,10 +7,12 @@
   flex-shrink: 0;
 }
 
+/* No explicit flex-direction: a plain `row` already follows the document's
+   `dir`, so tiles fill right-to-left in Hebrew and left-to-right in English.
+   (An earlier `row-reverse` here double-flipped RTL back into LTR.) */
 .row {
   display: flex;
   gap: 6px;
-  flex-direction: row-reverse;
 }
 
 .shake {

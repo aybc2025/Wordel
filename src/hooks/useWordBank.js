@@ -1,17 +1,27 @@
 import { useState, useEffect, useCallback, useMemo } from "react";
 import { normalizeWord } from "../utils/normalizeHebrew";
+import { getLanguage } from "../config/languages";
 
 /**
- * Loads the static word bank (public/words.json) once, and exposes
- * helpers to pick a random word and validate a typed word against the bank.
+ * Loads the static word bank for the active language (public/words.json for
+ * Hebrew, public/words-en.json for English), and exposes helpers to pick a
+ * random word and validate a typed word against the bank.
+ *
+ * Refetches when the language changes, resetting to "loading" first so callers
+ * can tell that the previous language's words are no longer valid.
  */
-export function useWordBank() {
+export function useWordBank(langCode = "he") {
   const [words, setWords] = useState([]);
   const [status, setStatus] = useState("loading"); // loading | ready | error
 
+  const wordsFile = getLanguage(langCode).wordsFile;
+
   useEffect(() => {
     let cancelled = false;
-    fetch(`${import.meta.env.BASE_URL}words.json`)
+    setStatus("loading");
+    setWords([]);
+
+    fetch(`${import.meta.env.BASE_URL}${wordsFile}`)
       .then((res) => {
         if (!res.ok) throw new Error(`Failed to load word bank: ${res.status}`);
         return res.json();
@@ -29,16 +39,17 @@ export function useWordBank() {
     return () => {
       cancelled = true;
     };
-  }, []);
+  }, [wordsFile]);
 
-  // Lookup set for O(1) validation, normalized so ך/כ etc. match either form.
+  // Lookup set for O(1) validation, normalized so ך/כ (Hebrew) or letter case
+  // (English) match either form.
   const lookupSet = useMemo(() => {
     const set = new Set();
     for (const entry of words) {
-      set.add(normalizeWord(entry.word));
+      set.add(normalizeWord(entry.word, langCode));
     }
     return set;
-  }, [words]);
+  }, [words, langCode]);
 
   const commonWords = useMemo(() => words.filter((w) => w.common), [words]);
 
@@ -62,9 +73,9 @@ export function useWordBank() {
   const isValidWord = useCallback(
     (word) => {
       if (word.length === 0) return false;
-      return lookupSet.has(normalizeWord(word));
+      return lookupSet.has(normalizeWord(word, langCode));
     },
-    [lookupSet]
+    [lookupSet, langCode]
   );
 
   return {

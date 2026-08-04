@@ -9,26 +9,32 @@ import { useWordBank } from "./hooks/useWordBank";
 import { useGameEngine } from "./hooks/useGameEngine";
 import { useStats } from "./hooks/useStats";
 import { useKeyboardInput } from "./hooks/useKeyboardInput";
+import { useLanguage } from "./hooks/useLanguage";
+import { getLanguage } from "./config/languages";
 import styles from "./App.module.css";
 
 export default function App({ updateAvailable, onUpdate }) {
-  const { status, totalCount, commonCount, pickRandomWord, isValidWord } = useWordBank();
+  const { lang, setLang, t, config } = useLanguage();
+  const { status, totalCount, commonCount, pickRandomWord, isValidWord } =
+    useWordBank(lang);
   const { stats, recordRound, resetStats } = useStats();
 
   const [targetWord, setTargetWord] = useState(null);
   const [menuOpen, setMenuOpen] = useState(false);
-  const [commonOnly, setCommonOnly] = useState(false);
+  const [commonOnly, setCommonOnly] = useState(() => config.defaultCommonOnly);
   const [shakeRow, setShakeRow] = useState(null);
   const recordedRef = useRef(false);
 
-  // Pick the very first word once the word bank has loaded.
+  // Pick a word once the word bank has loaded. Also covers a language switch,
+  // which clears targetWord and refetches the other language's bank.
   useEffect(() => {
     if (status === "ready" && targetWord === null) {
-      setTargetWord(pickRandomWord(false));
+      setTargetWord(pickRandomWord(commonOnly));
     }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [status, targetWord, pickRandomWord]);
 
-  const engine = useGameEngine(targetWord || "");
+  const engine = useGameEngine(targetWord || "", lang);
 
   // React to game-engine events (the "observer" side of the event channel).
   useEffect(() => {
@@ -67,6 +73,7 @@ export default function App({ updateAvailable, onUpdate }) {
     onBackspace: handleBackspace,
     onEnter: handleEnter,
     enabled: engine.gamePhase === "playing" && !menuOpen,
+    langCode: lang,
   });
 
   const handleStartNewRound = useCallback(
@@ -86,10 +93,25 @@ export default function App({ updateAvailable, onUpdate }) {
     }
   }, [pickRandomWord, commonOnly, engine]);
 
+  // Switching language abandons the current round: the target word belongs to
+  // the previous language's bank, so a fresh word is drawn once the new bank
+  // has loaded (see the effect above, which fires when targetWord is null).
+  const handleChangeLang = useCallback(
+    (next) => {
+      if (next === lang) return;
+      setTargetWord(null);
+      engine.reset();
+      setCommonOnly(getLanguage(next).defaultCommonOnly);
+      setLang(next);
+      setMenuOpen(false);
+    },
+    [lang, setLang, engine]
+  );
+
   if (status === "loading" || targetWord === null) {
     return (
       <div className={styles.app}>
-        <div className={styles.loading}>טוען מאגר מילים...</div>
+        <div className={styles.loading}>{t("loading")}</div>
       </div>
     );
   }
@@ -97,17 +119,19 @@ export default function App({ updateAvailable, onUpdate }) {
   if (status === "error") {
     return (
       <div className={styles.app}>
-        <div className={styles.loading}>
-          שגיאה בטעינת מאגר המילים. נסה/י לרענן את הדף.
-        </div>
+        <div className={styles.loading}>{t("loadError")}</div>
       </div>
     );
   }
 
   return (
     <div className={styles.app}>
-      <UpdateBanner visible={updateAvailable} onUpdate={onUpdate} />
-      <Header onMenuClick={() => setMenuOpen(true)} onNewGameClick={handleNewGameClick} />
+      <UpdateBanner visible={updateAvailable} onUpdate={onUpdate} t={t} />
+      <Header
+        onMenuClick={() => setMenuOpen(true)}
+        onNewGameClick={handleNewGameClick}
+        t={t}
+      />
 
       {engine.gamePhase === "playing" ? (
         <>
@@ -122,6 +146,8 @@ export default function App({ updateAvailable, onUpdate }) {
             onEnter={handleEnter}
             keyStatuses={engine.keyStatuses}
             disabled={false}
+            langCode={lang}
+            t={t}
           />
         </>
       ) : (
@@ -133,6 +159,8 @@ export default function App({ updateAvailable, onUpdate }) {
           onBackToMenu={() => setMenuOpen(true)}
           pickRandomWord={pickRandomWord}
           isValidWord={isValidWord}
+          langCode={lang}
+          t={t}
         />
       )}
 
@@ -145,6 +173,10 @@ export default function App({ updateAvailable, onUpdate }) {
         onToggleCommonOnly={setCommonOnly}
         stats={stats}
         onResetStats={resetStats}
+        lang={lang}
+        onChangeLang={handleChangeLang}
+        locale={config.locale}
+        t={t}
       />
     </div>
   );

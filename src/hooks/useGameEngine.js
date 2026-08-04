@@ -9,7 +9,7 @@ import { evaluateGuess, mergeKeyStatuses } from "../utils/evaluateGuess";
  * nonce) that the rendering layer observes to trigger effects, per the
  * event-channel pattern. Never cleared, only replaced with a new nonce.
  */
-export function useGameEngine(targetWord) {
+export function useGameEngine(targetWord, langCode = "he") {
   const [currentInput, setCurrentInput] = useState("");
   const [submittedGuesses, setSubmittedGuesses] = useState([]); // array of evaluated guesses
   const [keyStatuses, setKeyStatuses] = useState({});
@@ -57,7 +57,7 @@ export function useGameEngine(targetWord) {
         return { ok: false, reason: "not-in-bank" };
       }
 
-      const evaluated = evaluateGuess(currentInput, targetWord);
+      const evaluated = evaluateGuess(currentInput, targetWord, langCode);
       const isWin = evaluated.every((e) => e.status === TILE_STATUS.CORRECT);
 
       const nextGuesses = [...submittedGuesses, evaluated];
@@ -77,7 +77,7 @@ export function useGameEngine(targetWord) {
 
       return { ok: true };
     },
-    [currentInput, gamePhase, submittedGuesses, targetWord, emitEvent]
+    [currentInput, gamePhase, submittedGuesses, targetWord, langCode, emitEvent]
   );
 
   const reset = useCallback(() => {

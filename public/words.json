@@ -1,31 +1,123 @@
 [
 {
-"word": "אבחון",
+"word": "אבדות",
 "common": true
+},
+{
+"word": "אבחון",
+"common": false
+},
+{
+"word": "אבחנה",
+"common": false
+},
+{
+"word": "אבטחה",
+"common": true
+},
+{
+"word": "אבטלה",
+"common": false
 },
 {
 "word": "אבנים",
 "common": true
 },
 {
-"word": "אגמים",
+"word": "אגדות",
 "common": true
 },
 {
+"word": "אגודה",
+"common": false
+},
+{
+"word": "אגמים",
+"common": false
+},
+{
 "word": "אגסים",
+"common": false
+},
+{
+"word": "אדומה",
+"common": true
+},
+{
+"word": "אדירה",
+"common": true
+},
+{
+"word": "אדמות",
 "common": true
 },
 {
 "word": "אהבתי",
+"common": false
+},
+{
+"word": "אהובה",
+"common": false
+},
+{
+"word": "אוויר",
 "common": true
 },
 {
+"word": "אוזון",
+"common": false
+},
+{
+"word": "אוזני",
+"common": false
+},
+{
 "word": "אוכלת",
-"common": true
+"common": false
 },
 {
 "word": "אולפן",
 "common": true
+},
+{
+"word": "אומות",
+"common": true
+},
+{
+"word": "אומלל",
+"common": false
+},
+{
+"word": "אוניה",
+"common": false
+},
+{
+"word": "אוסטר",
+"common": false
+},
+{
+"word": "אופטי",
+"common": false
+},
+{
+"word": "אופנה",
+"common": true
+},
+{
+"word": "אופני",
+"common": true
+},
+{
+"word": "אופקי",
+"common": false
+},
+{
+"word": "אופרה",
+"common": true
+},
+{
+"word": "אורגן",
+"common": false
 },
 {
 "word": "אורות",
@@ -36,7 +128,55 @@
 "common": false
 },
 {
+"word": "אותות",
+"common": true
+},
+{
+"word": "אזכור",
+"common": true
+},
+{
+"word": "אחדות",
+"common": true
+},
+{
+"word": "אחוזה",
+"common": false
+},
+{
+"word": "אחורי",
+"common": false
+},
+{
 "word": "אחיות",
+"common": false
+},
+{
+"word": "אחרון",
+"common": true
+},
+{
+"word": "אחרות",
+"common": true
+},
+{
+"word": "אחרים",
+"common": true
+},
+{
+"word": "איגוד",
+"common": true
+},
+{
+"word": "אידאל",
+"common": false
+},
+{
+"word": "איזון",
+"common": true
+},
+{
+"word": "איחוד",
 "common": true
 },
 {
@@ -44,11 +184,99 @@
 "common": true
 },
 {
+"word": "איידס",
+"common": false
+},
+{
+"word": "איכות",
+"common": true
+},
+{
+"word": "אימאם",
+"common": false
+},
+{
 "word": "אימון",
 "common": true
 },
 {
+"word": "אינקה",
+"common": false
+},
+{
 "word": "איסור",
+"common": true
+},
+{
+"word": "איפשר",
+"common": true
+},
+{
+"word": "אירוח",
+"common": false
+},
+{
+"word": "אירוע",
+"common": true
+},
+{
+"word": "אירים",
+"common": false
+},
+{
+"word": "אירית",
+"common": false
+},
+{
+"word": "אישום",
+"common": true
+},
+{
+"word": "אישור",
+"common": true
+},
+{
+"word": "אישים",
+"common": true
+},
+{
+"word": "אישית",
+"common": true
+},
+{
+"word": "אכזרי",
+"common": false
+},
+{
+"word": "אכילה",
+"common": true
+},
+{
+"word": "אלבום",
+"common": true
+},
+{
+"word": "אלבני",
+"common": false
+},
+{
+"word": "אליטה",
+"common": false
+},
+{
+"word": "אלמוג",
+"common": true
+},
+{
+"word": "אלמנט",
+"common": true
+},
+{
+"word": "אלסטי",
+"common": false
+},
+{
+"word": "אלפים",
 "common": true
 },
 {
@@ -56,31 +284,111 @@
 "common": true
 },
 {
+"word": "אמינו",
+"common": true
+},
+{
+"word": "אמירה",
+"common": true
+},
+{
+"word": "אמיתי",
+"common": true
+},
+{
 "word": "אמנות",
 "common": true
 },
 {
-"word": "אמרנו",
+"word": "אמנים",
 "common": true
+},
+{
+"word": "אמרנו",
+"common": false
 },
 {
 "word": "אמרתי",
 "common": true
 },
 {
-"word": "אנטנה",
+"word": "אנדור",
+"common": false
+},
+{
+"word": "אנושי",
 "common": true
+},
+{
+"word": "אנזים",
+"common": false
+},
+{
+"word": "אנטנה",
+"common": false
+},
+{
+"word": "אנייה",
+"common": false
+},
+{
+"word": "אנימה",
+"common": false
 },
 {
 "word": "אנשים",
 "common": true
 },
 {
-"word": "אפייה",
+"word": "אסלאם",
+"common": false
+},
+{
+"word": "אספקה",
 "common": true
 },
 {
+"word": "אספקט",
+"common": false
+},
+{
+"word": "אסתטי",
+"common": false
+},
+{
+"word": "אפייה",
+"common": false
+},
+{
+"word": "אפלים",
+"common": false
+},
+{
+"word": "אפשרי",
+"common": true
+},
+{
+"word": "אצולה",
+"common": true
+},
+{
+"word": "אקדמי",
+"common": true
+},
+{
+"word": "אקורד",
+"common": false
+},
+{
 "word": "אקלים",
+"common": true
+},
+{
+"word": "אקראי",
+"common": true
+},
+{
+"word": "ארבעה",
 "common": true
 },
 {
@@ -89,7 +397,7 @@
 },
 {
 "word": "ארוחה",
-"common": true
+"common": false
 },
 {
 "word": "ארוחת",
@@ -100,6 +408,62 @@
 "common": true
 },
 {
+"word": "אריות",
+"common": false
+},
+{
+"word": "ארמון",
+"common": true
+},
+{
+"word": "ארמיה",
+"common": false
+},
+{
+"word": "ארמית",
+"common": false
+},
+{
+"word": "ארמני",
+"common": false
+},
+{
+"word": "ארצות",
+"common": true
+},
+{
+"word": "ארצית",
+"common": true
+},
+{
+"word": "אשורי",
+"common": false
+},
+{
+"word": "אשכול",
+"common": true
+},
+{
+"word": "אשראי",
+"common": true
+},
+{
+"word": "אתיקה",
+"common": false
+},
+{
+"word": "אתנית",
+"common": true
+},
+{
+"word": "אתרים",
+"common": true
+},
+{
+"word": "בארוק",
+"common": false
+},
+{
 "word": "בגדים",
 "common": true
 },
@@ -108,27 +472,83 @@
 "common": true
 },
 {
+"word": "בדולח",
+"common": false
+},
+{
 "word": "בדיקה",
 "common": true
 },
 {
-"word": "בהירה",
+"word": "בהחלט",
 "common": true
+},
+{
+"word": "בהירה",
+"common": false
+},
+{
+"word": "בהתאם",
+"common": true
+},
+{
+"word": "בובות",
+"common": true
+},
+{
+"word": "בוגרת",
+"common": false
+},
+{
+"word": "בוטני",
+"common": false
+},
+{
+"word": "בוכנה",
+"common": false
+},
+{
+"word": "בולטת",
+"common": true
+},
+{
+"word": "בונים",
+"common": true
+},
+{
+"word": "בונקר",
+"common": false
 },
 {
 "word": "בועות",
-"common": true
+"common": false
+},
+{
+"word": "בורים",
+"common": false
 },
 {
 "word": "בורסה",
-"common": true
+"common": false
 },
 {
 "word": "בורקס",
-"common": true
+"common": false
 },
 {
 "word": "בחילה",
+"common": false
+},
+{
+"word": "בחירה",
+"common": true
+},
+{
+"word": "בטיסט",
+"common": false
+},
+{
+"word": "בידור",
 "common": true
 },
 {
@@ -136,11 +556,23 @@
 "common": true
 },
 {
-"word": "ביישן",
+"word": "ביטוי",
 "common": true
 },
 {
+"word": "ביישן",
+"common": false
+},
+{
+"word": "בימוי",
+"common": false
+},
+{
 "word": "ביצוע",
+"common": true
+},
+{
+"word": "ביצות",
 "common": true
 },
 {
@@ -148,11 +580,19 @@
 "common": true
 },
 {
+"word": "ביקור",
+"common": true
+},
+{
+"word": "ביקוש",
+"common": false
+},
+{
 "word": "בישול",
 "common": true
 },
 {
-"word": "ביתות",
+"word": "בישוף",
 "common": false
 },
 {
@@ -160,7 +600,31 @@
 "common": false
 },
 {
+"word": "בכורה",
+"common": true
+},
+{
+"word": "בכירה",
+"common": false
+},
+{
+"word": "בלעדי",
+"common": true
+},
+{
+"word": "במאים",
+"common": false
+},
+{
 "word": "במהלך",
+"common": true
+},
+{
+"word": "בנויה",
+"common": true
+},
+{
+"word": "בנייה",
 "common": true
 },
 {
@@ -169,19 +633,35 @@
 },
 {
 "word": "בננות",
-"common": true
+"common": false
 },
 {
 "word": "בנקים",
-"common": true
+"common": false
+},
+{
+"word": "בסיסט",
+"common": false
 },
 {
 "word": "בעיות",
 "common": true
 },
 {
-"word": "בצלים",
+"word": "בעייה",
 "common": true
+},
+{
+"word": "בעליל",
+"common": true
+},
+{
+"word": "בצהרי",
+"common": false
+},
+{
+"word": "בצלים",
+"common": false
 },
 {
 "word": "בקבוק",
@@ -192,28 +672,72 @@
 "common": true
 },
 {
+"word": "ברבור",
+"common": false
+},
+{
 "word": "ברווז",
+"common": false
+},
+{
+"word": "ברורה",
 "common": true
 },
 {
+"word": "בריון",
+"common": false
+},
+{
+"word": "בריחה",
+"common": false
+},
+{
 "word": "בריכה",
+"common": false
+},
+{
+"word": "ברירה",
 "common": true
 },
 {
 "word": "ברקים",
-"common": true
+"common": false
 },
 {
 "word": "בשמים",
 "common": true
 },
 {
+"word": "גאווה",
+"common": false
+},
+{
+"word": "גאולה",
+"common": false
+},
+{
+"word": "גאורג",
+"common": false
+},
+{
+"word": "גאלים",
+"common": false
+},
+{
 "word": "גבוהה",
 "common": true
 },
 {
+"word": "גבורה",
+"common": false
+},
+{
 "word": "גבינה",
 "common": true
+},
+{
+"word": "גבעול",
+"common": false
 },
 {
 "word": "גבעות",
@@ -228,48 +752,168 @@
 "common": true
 },
 {
-"word": "גזעות",
+"word": "גדילה",
 "common": false
 },
 {
+"word": "גדלים",
+"common": true
+},
+{
+"word": "גדרות",
+"common": false
+},
+{
+"word": "גוברת",
+"common": true
+},
+{
+"word": "גויים",
+"common": false
+},
+{
+"word": "גולים",
+"common": false
+},
+{
+"word": "גולמי",
+"common": false
+},
+{
+"word": "גופות",
+"common": true
+},
+{
+"word": "גופים",
+"common": true
+},
+{
+"word": "גופני",
+"common": true
+},
+{
+"word": "גורים",
+"common": false
+},
+{
+"word": "גורמת",
+"common": true
+},
+{
+"word": "גורסת",
+"common": true
+},
+{
+"word": "גותית",
+"common": false
+},
+{
+"word": "גזירה",
+"common": true
+},
+{
 "word": "גזעים",
+"common": true
+},
+{
+"word": "גזעני",
 "common": false
 },
 {
 "word": "גזרים",
+"common": false
+},
+{
+"word": "גטאות",
+"common": false
+},
+{
+"word": "גיבור",
+"common": true
+},
+{
+"word": "גידול",
 "common": true
 },
 {
 "word": "גיהוץ",
-"common": true
+"common": false
 },
 {
 "word": "גיטרה",
 "common": true
 },
 {
+"word": "גילוי",
+"common": true
+},
+{
 "word": "גינות",
+"common": false
+},
+{
+"word": "גירוי",
+"common": false
+},
+{
+"word": "גירוש",
+"common": true
+},
+{
+"word": "גירסה",
+"common": false
+},
+{
+"word": "גישות",
+"common": true
+},
+{
+"word": "גלבוע",
+"common": false
+},
+{
+"word": "גלגול",
 "common": true
 },
 {
 "word": "גלידה",
-"common": true
+"common": false
+},
+{
+"word": "גליון",
+"common": false
+},
+{
+"word": "גלילי",
+"common": false
 },
 {
 "word": "גלריה",
-"common": true
+"common": false
+},
+{
+"word": "גמדים",
+"common": false
 },
 {
 "word": "גניבה",
-"common": true
+"common": false
 },
 {
 "word": "גננות",
-"common": true
+"common": false
 },
 {
 "word": "געגוע",
-"common": true
+"common": false
+},
+{
+"word": "גראמי",
+"common": false
+},
+{
+"word": "גראנד",
+"common": false
 },
 {
 "word": "גרעין",
@@ -277,7 +921,7 @@
 },
 {
 "word": "גשמים",
-"common": true
+"common": false
 },
 {
 "word": "גשרים",
@@ -293,23 +937,71 @@
 },
 {
 "word": "דגלים",
+"common": false
+},
+{
+"word": "דגמים",
 "common": true
+},
+{
+"word": "דוגמה",
+"common": true
+},
+{
+"word": "דוגמן",
+"common": false
 },
 {
 "word": "דודים",
-"common": true
+"common": false
 },
 {
 "word": "דוחות",
+"common": false
+},
+{
+"word": "דומות",
+"common": true
+},
+{
+"word": "דומים",
+"common": true
+},
+{
+"word": "דורות",
 "common": true
 },
 {
 "word": "דחייה",
-"common": true
+"common": false
+},
+{
+"word": "דחפור",
+"common": false
 },
 {
 "word": "דיאטה",
+"common": false
+},
+{
+"word": "דיבור",
 "common": true
+},
+{
+"word": "דיווח",
+"common": true
+},
+{
+"word": "דיכוי",
+"common": true
+},
+{
+"word": "דימוי",
+"common": true
+},
+{
+"word": "דינמי",
+"common": false
 },
 {
 "word": "דירוג",
@@ -328,35 +1020,151 @@
 "common": true
 },
 {
+"word": "דפדפן",
+"common": false
+},
+{
 "word": "דקדוק",
+"common": false
+},
+{
+"word": "דרגות",
 "common": true
 },
 {
-"word": "דקהות",
+"word": "דרוזי",
 "common": false
 },
 {
-"word": "דקהים",
+"word": "דרומי",
 "common": false
+},
+{
+"word": "דרושה",
+"common": false
+},
+{
+"word": "דרישה",
+"common": true
 },
 {
 "word": "דרכון",
-"common": true
+"common": false
 },
 {
 "word": "דרכים",
 "common": true
 },
 {
-"word": "הבדלה",
+"word": "דרמטי",
 "common": true
+},
+{
+"word": "דרקון",
+"common": false
+},
+{
+"word": "דתיות",
+"common": true
+},
+{
+"word": "דתיים",
+"common": true
+},
+{
+"word": "הבדלה",
+"common": false
+},
+{
+"word": "הבחין",
+"common": true
+},
+{
+"word": "הבטיח",
+"common": true
+},
+{
+"word": "הבשור",
+"common": false
+},
+{
+"word": "הגביר",
+"common": false
+},
+{
+"word": "הגיון",
+"common": true
+},
+{
+"word": "הגייה",
+"common": false
+},
+{
+"word": "הדדית",
+"common": true
+},
+{
+"word": "הדרדר",
+"common": false
+},
+{
+"word": "הוגדר",
+"common": true
+},
+{
+"word": "הוגים",
+"common": true
+},
+{
+"word": "הודיע",
+"common": true
+},
+{
+"word": "הודית",
+"common": false
 },
 {
 "word": "הודעה",
 "common": true
 },
 {
+"word": "הוחלף",
+"common": true
+},
+{
+"word": "הוכחה",
+"common": true
+},
+{
+"word": "הוכיח",
+"common": true
+},
+{
+"word": "הוכרז",
+"common": true
+},
+{
+"word": "הולדת",
+"common": true
+},
+{
 "word": "הולכת",
+"common": true
+},
+{
+"word": "הומור",
+"common": true
+},
+{
+"word": "הוסיף",
+"common": true
+},
+{
+"word": "הוענק",
+"common": true
+},
+{
+"word": "הופיע",
 "common": true
 },
 {
@@ -368,7 +1176,23 @@
 "common": true
 },
 {
+"word": "הוציא",
+"common": true
+},
+{
 "word": "הורים",
+"common": true
+},
+{
+"word": "הותיר",
+"common": true
+},
+{
+"word": "הזדמן",
+"common": false
+},
+{
+"word": "החזיק",
 "common": true
 },
 {
@@ -376,51 +1200,219 @@
 "common": true
 },
 {
-"word": "החלמה",
+"word": "החליט",
 "common": true
 },
 {
-"word": "החלקה",
+"word": "החליף",
 "common": true
+},
+{
+"word": "החלמה",
+"common": false
+},
+{
+"word": "החלקה",
+"common": false
+},
+{
+"word": "החשיב",
+"common": false
+},
+{
+"word": "היגוי",
+"common": false
 },
 {
 "word": "הייתי",
 "common": true
 },
 {
+"word": "הילוך",
+"common": false
+},
+{
+"word": "הימור",
+"common": false
+},
+{
+"word": "הכניס",
+"common": true
+},
+{
+"word": "הכניע",
+"common": false
+},
+{
 "word": "הכנסה",
 "common": true
+},
+{
+"word": "הכרחי",
+"common": true
+},
+{
+"word": "הכריז",
+"common": true
+},
+{
+"word": "הכרעה",
+"common": true
+},
+{
+"word": "הכתרה",
+"common": false
 },
 {
 "word": "הליכה",
 "common": true
 },
 {
-"word": "הלכנו",
+"word": "הלכות",
 "common": true
+},
+{
+"word": "הלכנו",
+"common": false
 },
 {
 "word": "הלכתי",
 "common": true
 },
 {
+"word": "המליץ",
+"common": false
+},
+{
 "word": "המלצה",
 "common": true
+},
+{
+"word": "המנון",
+"common": false
 },
 {
 "word": "המצאה",
 "common": true
 },
 {
-"word": "המתנה",
+"word": "המציא",
 "common": true
+},
+{
+"word": "המשיך",
+"common": true
+},
+{
+"word": "המתנה",
+"common": false
+},
+{
+"word": "הנדסה",
+"common": true
+},
+{
+"word": "הנדסי",
+"common": false
+},
+{
+"word": "הנהלה",
+"common": false
+},
+{
+"word": "הנחית",
+"common": false
+},
+{
+"word": "הנקוד",
+"common": false
+},
+{
+"word": "הסכים",
+"common": true
+},
+{
+"word": "הסכמה",
+"common": true
+},
+{
+"word": "הספיק",
+"common": true
+},
+{
+"word": "הסתבר",
+"common": true
+},
+{
+"word": "הסתגל",
+"common": false
+},
+{
+"word": "הסתדר",
+"common": false
+},
+{
+"word": "הסתיר",
+"common": false
+},
+{
+"word": "הסתמך",
+"common": false
+},
+{
+"word": "הסתער",
+"common": false
+},
+{
+"word": "העטיף",
+"common": false
+},
+{
+"word": "העניק",
+"common": true
+},
+{
+"word": "העניש",
+"common": false
+},
+{
+"word": "העפיל",
+"common": false
+},
+{
+"word": "העפלה",
+"common": false
+},
+{
+"word": "הערות",
+"common": true
+},
+{
+"word": "העריך",
+"common": false
 },
 {
 "word": "הערכה",
 "common": true
 },
 {
+"word": "הפגיש",
+"common": false
+},
+{
 "word": "הפגנה",
+"common": false
+},
+{
+"word": "הפוכה",
+"common": true
+},
+{
+"word": "הפיכה",
+"common": true
+},
+{
+"word": "הפסיד",
 "common": true
 },
 {
@@ -428,7 +1420,43 @@
 "common": true
 },
 {
+"word": "הפקות",
+"common": true
+},
+{
+"word": "הפרדה",
+"common": true
+},
+{
+"word": "הפרטה",
+"common": false
+},
+{
+"word": "הפתעה",
+"common": false
+},
+{
+"word": "הצביע",
+"common": true
+},
+{
 "word": "הצבעה",
+"common": true
+},
+{
+"word": "הצגות",
+"common": true
+},
+{
+"word": "הצהרה",
+"common": true
+},
+{
+"word": "הצולל",
+"common": false
+},
+{
+"word": "הצטרף",
 "common": true
 },
 {
@@ -436,8 +1464,44 @@
 "common": true
 },
 {
-"word": "הרשעה",
+"word": "הצליח",
 "common": true
+},
+{
+"word": "הצנחן",
+"common": false
+},
+{
+"word": "הצעות",
+"common": true
+},
+{
+"word": "הצפנה",
+"common": true
+},
+{
+"word": "הקבוץ",
+"common": false
+},
+{
+"word": "הריון",
+"common": true
+},
+{
+"word": "הרסני",
+"common": false
+},
+{
+"word": "הרשים",
+"common": false
+},
+{
+"word": "הרשעה",
+"common": false
+},
+{
+"word": "השחית",
+"common": false
 },
 {
 "word": "השכלה",
@@ -445,14 +1509,34 @@
 },
 {
 "word": "השכמה",
+"common": false
+},
+{
+"word": "השלים",
 "common": true
 },
 {
 "word": "השלכה",
+"common": false
+},
+{
+"word": "השמדה",
 "common": true
 },
 {
+"word": "השמיט",
+"common": false
+},
+{
+"word": "השמיע",
+"common": false
+},
+{
 "word": "השערה",
+"common": true
+},
+{
+"word": "השפיע",
 "common": true
 },
 {
@@ -460,7 +1544,67 @@
 "common": true
 },
 {
+"word": "השקיע",
+"common": false
+},
+{
 "word": "השקעה",
+"common": true
+},
+{
+"word": "השקפה",
+"common": true
+},
+{
+"word": "השתלב",
+"common": false
+},
+{
+"word": "השתלט",
+"common": true
+},
+{
+"word": "השתמש",
+"common": true
+},
+{
+"word": "השתתף",
+"common": true
+},
+{
+"word": "התאחד",
+"common": false
+},
+{
+"word": "התבטא",
+"common": true
+},
+{
+"word": "התבסס",
+"common": true
+},
+{
+"word": "התגבר",
+"common": false
+},
+{
+"word": "התגבש",
+"common": false
+},
+{
+"word": "התחבר",
+"common": false
+},
+{
+"word": "התחדש",
+"common": false
+},
+{
+"word": "התחזק",
+"common": false
+},
+{
+"word": "התחיל",
 "common": true
 },
 {
@@ -468,19 +1612,159 @@
 "common": true
 },
 {
-"word": "התמדה",
+"word": "התחתן",
 "common": true
+},
+{
+"word": "התלהב",
+"common": false
+},
+{
+"word": "התמדה",
+"common": false
+},
+{
+"word": "התמזג",
+"common": false
+},
+{
+"word": "התמכר",
+"common": false
+},
+{
+"word": "התמקד",
+"common": true
+},
+{
+"word": "התנגד",
+"common": true
+},
+{
+"word": "התנגש",
+"common": false
+},
+{
+"word": "התנדב",
+"common": false
+},
+{
+"word": "התנהג",
+"common": false
+},
+{
+"word": "התנהל",
+"common": true
+},
+{
+"word": "התנצל",
+"common": false
+},
+{
+"word": "התנקש",
+"common": false
+},
+{
+"word": "התנתק",
+"common": false
+},
+{
+"word": "התעלם",
+"common": false
+},
+{
+"word": "התעקש",
+"common": false
+},
+{
+"word": "התערב",
+"common": false
+},
+{
+"word": "התפטר",
+"common": true
+},
+{
+"word": "התפלג",
+"common": false
+},
+{
+"word": "התפצל",
+"common": false
+},
+{
+"word": "התפרץ",
+"common": false
+},
+{
+"word": "התפרק",
+"common": false
+},
+{
+"word": "התפשט",
+"common": true
+},
+{
+"word": "התקדם",
+"common": true
+},
+{
+"word": "התקרב",
+"common": true
+},
+{
+"word": "התקשר",
+"common": false
+},
+{
+"word": "התרחב",
+"common": false
+},
+{
+"word": "התרחק",
+"common": false
+},
+{
+"word": "התרחש",
+"common": true
+},
+{
+"word": "התרכז",
+"common": false
+},
+{
+"word": "התרסק",
+"common": false
+},
+{
+"word": "וולגה",
+"common": false
 },
 {
 "word": "וידאו",
 "common": true
 },
 {
-"word": "וילון",
+"word": "ויכוח",
 "common": true
 },
 {
+"word": "וילון",
+"common": false
+},
+{
+"word": "וירוס",
+"common": false
+},
+{
 "word": "ועידה",
+"common": false
+},
+{
+"word": "וקטור",
+"common": true
+},
+{
+"word": "זוגות",
 "common": true
 },
 {
@@ -488,11 +1772,19 @@
 "common": true
 },
 {
-"word": "זוכרת",
+"word": "זוכים",
 "common": true
 },
 {
+"word": "זוכרת",
+"common": false
+},
+{
 "word": "זולים",
+"common": false
+},
+{
+"word": "זיהוי",
 "common": true
 },
 {
@@ -501,18 +1793,70 @@
 },
 {
 "word": "זיכוי",
-"common": true
+"common": false
+},
+{
+"word": "זיקוק",
+"common": false
 },
 {
 "word": "זירוז",
+"common": false
+},
+{
+"word": "זיתים",
+"common": false
+},
+{
+"word": "זכאים",
+"common": false
+},
+{
+"word": "זכייה",
+"common": false
+},
+{
+"word": "זכרון",
 "common": true
+},
+{
+"word": "זכרים",
+"common": true
+},
+{
+"word": "זמינה",
+"common": false
 },
 {
 "word": "זמנים",
 "common": true
 },
 {
+"word": "זמנית",
+"common": true
+},
+{
+"word": "זמרים",
+"common": true
+},
+{
+"word": "זעזוע",
+"common": false
+},
+{
+"word": "זקנים",
+"common": false
+},
+{
+"word": "זרימה",
+"common": true
+},
+{
 "word": "זריקה",
+"common": false
+},
+{
+"word": "זרמים",
 "common": true
 },
 {
@@ -521,6 +1865,14 @@
 },
 {
 "word": "זרעים",
+"common": true
+},
+{
+"word": "חבורה",
+"common": true
+},
+{
+"word": "חבילה",
 "common": false
 },
 {
@@ -532,8 +1884,12 @@
 "common": true
 },
 {
-"word": "חגורה",
+"word": "חברתי",
 "common": true
+},
+{
+"word": "חגורה",
+"common": false
 },
 {
 "word": "חדרים",
@@ -548,28 +1904,64 @@
 "common": true
 },
 {
-"word": "חוויה",
+"word": "חדשני",
+"common": false
+},
+{
+"word": "חובות",
 "common": true
+},
+{
+"word": "חוברת",
+"common": false
+},
+{
+"word": "חוגים",
+"common": true
+},
+{
+"word": "חוויה",
+"common": false
+},
+{
+"word": "חוזים",
+"common": false
 },
 {
 "word": "חוכמה",
-"common": true
+"common": false
 },
 {
 "word": "חולות",
+"common": true
+},
+{
+"word": "חוליה",
 "common": false
 },
 {
 "word": "חולים",
-"common": false
+"common": true
 },
 {
 "word": "חולצה",
-"common": true
+"common": false
 },
 {
 "word": "חולשה",
+"common": false
+},
+{
+"word": "חומות",
 "common": true
+},
+{
+"word": "חומצה",
+"common": true
+},
+{
+"word": "חומצי",
+"common": false
 },
 {
 "word": "חומרה",
@@ -577,10 +1969,30 @@
 },
 {
 "word": "חופים",
-"common": true
+"common": false
 },
 {
 "word": "חופשה",
+"common": false
+},
+{
+"word": "חופשי",
+"common": true
+},
+{
+"word": "חוקים",
+"common": true
+},
+{
+"word": "חוקית",
+"common": true
+},
+{
+"word": "חוקתי",
+"common": false
+},
+{
+"word": "חורבן",
 "common": true
 },
 {
@@ -588,7 +2000,19 @@
 "common": true
 },
 {
+"word": "חושים",
+"common": false
+},
+{
 "word": "חותמת",
+"common": false
+},
+{
+"word": "חזותי",
+"common": false
+},
+{
+"word": "חזקות",
 "common": true
 },
 {
@@ -596,15 +2020,83 @@
 "common": true
 },
 {
-"word": "חיהות",
+"word": "חזרתי",
 "common": false
 },
 {
-"word": "חיהים",
+"word": "חטיבה",
+"common": true
+},
+{
+"word": "חיבור",
+"common": true
+},
+{
+"word": "חידוש",
+"common": true
+},
+{
+"word": "חיובי",
+"common": true
+},
+{
+"word": "חיוור",
 "common": false
+},
+{
+"word": "חיוני",
+"common": true
+},
+{
+"word": "חיזור",
+"common": false
+},
+{
+"word": "חיידק",
+"common": false
+},
+{
+"word": "חייזר",
+"common": false
+},
+{
+"word": "חיכוך",
+"common": false
+},
+{
+"word": "חילון",
+"common": false
+},
+{
+"word": "חילוץ",
+"common": false
+},
+{
+"word": "חימוש",
+"common": true
 },
 {
 "word": "חינוך",
+"common": true
+},
+{
+"word": "חיסון",
+"common": false
+},
+{
+"word": "חיפוש",
+"common": true
+},
+{
+"word": "חיקוי",
+"common": true
+},
+{
+"word": "חירום",
+"common": true
+},
+{
+"word": "חירות",
 "common": true
 },
 {
@@ -616,19 +2108,59 @@
 "common": true
 },
 {
+"word": "חכמים",
+"common": true
+},
+{
 "word": "חלבון",
 "common": true
 },
 {
+"word": "חלופי",
+"common": false
+},
+{
+"word": "חלוצי",
+"common": false
+},
+{
+"word": "חלוקה",
+"common": true
+},
+{
+"word": "חליטה",
+"common": false
+},
+{
 "word": "חליפה",
+"common": false
+},
+{
+"word": "חללים",
 "common": true
 },
 {
 "word": "חללית",
+"common": false
+},
+{
+"word": "חלקים",
 "common": true
 },
 {
+"word": "חלקיק",
+"common": true
+},
+{
+"word": "חלשות",
+"common": false
+},
+{
 "word": "חלשים",
+"common": false
+},
+{
+"word": "חמישה",
 "common": true
 },
 {
@@ -637,19 +2169,71 @@
 },
 {
 "word": "חנייה",
-"common": true
+"common": false
 },
 {
 "word": "חסידה",
+"common": false
+},
+{
+"word": "חסימה",
+"common": true
+},
+{
+"word": "חסרון",
+"common": false
+},
+{
+"word": "חפצים",
 "common": true
 },
 {
 "word": "חצאית",
+"common": false
+},
+{
+"word": "חקיקה",
 "common": true
 },
 {
 "word": "חקירה",
 "common": true
+},
+{
+"word": "חקלאי",
+"common": true
+},
+{
+"word": "חרדים",
+"common": true
+},
+{
+"word": "חרדית",
+"common": false
+},
+{
+"word": "חרושת",
+"common": false
+},
+{
+"word": "חרטום",
+"common": false
+},
+{
+"word": "חריפה",
+"common": true
+},
+{
+"word": "חרמון",
+"common": false
+},
+{
+"word": "חרקים",
+"common": true
+},
+{
+"word": "חשאית",
+"common": false
 },
 {
 "word": "חשבון",
@@ -660,12 +2244,24 @@
 "common": true
 },
 {
+"word": "חשובה",
+"common": true
+},
+{
 "word": "חשיבה",
 "common": true
 },
 {
-"word": "חתונה",
+"word": "חשיפה",
 "common": true
+},
+{
+"word": "חשמלי",
+"common": true
+},
+{
+"word": "חתונה",
+"common": false
 },
 {
 "word": "חתימה",
@@ -673,6 +2269,22 @@
 },
 {
 "word": "טבחים",
+"common": false
+},
+{
+"word": "טבילה",
+"common": false
+},
+{
+"word": "טבעות",
+"common": true
+},
+{
+"word": "טבעית",
+"common": true
+},
+{
+"word": "טובות",
 "common": true
 },
 {
@@ -680,7 +2292,39 @@
 "common": true
 },
 {
+"word": "טוענת",
+"common": true
+},
+{
+"word": "טורים",
+"common": true
+},
+{
+"word": "טורקי",
+"common": false
+},
+{
 "word": "טיגון",
+"common": false
+},
+{
+"word": "טיהור",
+"common": true
+},
+{
+"word": "טיטאן",
+"common": false
+},
+{
+"word": "טייסת",
+"common": true
+},
+{
+"word": "טילים",
+"common": true
+},
+{
+"word": "טיעון",
 "common": true
 },
 {
@@ -688,11 +2332,59 @@
 "common": true
 },
 {
+"word": "טיפוס",
+"common": true
+},
+{
 "word": "טיפות",
+"common": false
+},
+{
+"word": "טירון",
+"common": false
+},
+{
+"word": "טכנית",
 "common": true
 },
 {
 "word": "טלפון",
+"common": true
+},
+{
+"word": "טנקים",
+"common": true
+},
+{
+"word": "טסמני",
+"common": false
+},
+{
+"word": "טענות",
+"common": true
+},
+{
+"word": "טראגי",
+"common": false
+},
+{
+"word": "טראנס",
+"common": false
+},
+{
+"word": "טרופי",
+"common": true
+},
+{
+"word": "יבשות",
+"common": false
+},
+{
+"word": "יבשתי",
+"common": false
+},
+{
+"word": "ידועה",
 "common": true
 },
 {
@@ -708,7 +2400,43 @@
 "common": true
 },
 {
+"word": "יהדות",
+"common": true
+},
+{
+"word": "יהלום",
+"common": false
+},
+{
+"word": "יווצר",
+"common": false
+},
+{
+"word": "יוזמה",
+"common": true
+},
+{
+"word": "יומית",
+"common": false
+},
+{
+"word": "יונים",
+"common": true
+},
+{
+"word": "יוצאת",
+"common": true
+},
+{
+"word": "יוצרת",
+"common": true
+},
+{
 "word": "יושבת",
+"common": true
+},
+{
+"word": "יחודי",
 "common": true
 },
 {
@@ -716,15 +2444,59 @@
 "common": true
 },
 {
-"word": "ייבוא",
+"word": "יחסות",
+"common": false
+},
+{
+"word": "יחסים",
 "common": true
 },
 {
+"word": "יחסית",
+"common": true
+},
+{
+"word": "ייבוא",
+"common": false
+},
+{
 "word": "ייבוש",
+"common": false
+},
+{
+"word": "יידיש",
+"common": true
+},
+{
+"word": "ייחוד",
+"common": false
+},
+{
+"word": "ייחוס",
+"common": true
+},
+{
+"word": "ייעוץ",
 "common": true
 },
 {
 "word": "ייצוא",
+"common": false
+},
+{
+"word": "ייצוב",
+"common": false
+},
+{
+"word": "ייצוג",
+"common": true
+},
+{
+"word": "ייצור",
+"common": true
+},
+{
+"word": "יישוב",
 "common": true
 },
 {
@@ -737,14 +2509,50 @@
 },
 {
 "word": "ילדות",
-"common": false
+"common": true
 },
 {
 "word": "ילדים",
+"common": true
+},
+{
+"word": "ימיים",
+"common": true
+},
+{
+"word": "ימנית",
 "common": false
 },
 {
+"word": "ינשוף",
+"common": false
+},
+{
+"word": "יסודי",
+"common": true
+},
+{
 "word": "יערות",
+"common": true
+},
+{
+"word": "יפנים",
+"common": false
+},
+{
+"word": "יפנית",
+"common": true
+},
+{
+"word": "יציאה",
+"common": true
+},
+{
+"word": "יצירה",
+"common": true
+},
+{
+"word": "יצרני",
 "common": true
 },
 {
@@ -752,15 +2560,39 @@
 "common": true
 },
 {
+"word": "ירדני",
+"common": false
+},
+{
 "word": "ירוקה",
+"common": false
+},
+{
+"word": "ירושה",
 "common": true
 },
 {
-"word": "ירחות",
+"word": "ירחון",
 "common": false
 },
 {
 "word": "ירחים",
+"common": false
+},
+{
+"word": "יריבה",
+"common": false
+},
+{
+"word": "ירידה",
+"common": true
+},
+{
+"word": "יריעה",
+"common": false
+},
+{
+"word": "ירקון",
 "common": false
 },
 {
@@ -772,20 +2604,52 @@
 "common": true
 },
 {
+"word": "ישירה",
+"common": true
+},
+{
+"word": "ישנות",
+"common": false
+},
+{
 "word": "ישנים",
 "common": true
 },
 {
-"word": "כבידה",
+"word": "יתרון",
 "common": true
 },
 {
+"word": "כבידה",
+"common": false
+},
+{
 "word": "כביסה",
+"common": false
+},
+{
+"word": "כבלים",
+"common": false
+},
+{
+"word": "כהונת",
+"common": false
+},
+{
+"word": "כוונה",
+"common": true
+},
+{
+"word": "כוחות",
+"common": true
+},
+{
+"word": "כוללת",
 "common": true
 },
 {
 "word": "כועסת",
-"common": true
+"common": false
 },
 {
 "word": "כותבת",
@@ -804,8 +2668,32 @@
 "common": true
 },
 {
+"word": "כינוי",
+"common": true
+},
+{
+"word": "כינוס",
+"common": false
+},
+{
 "word": "כינור",
 "common": true
+},
+{
+"word": "כיסוי",
+"common": true
+},
+{
+"word": "כיפור",
+"common": true
+},
+{
+"word": "כישור",
+"common": false
+},
+{
+"word": "כיתוב",
+"common": false
 },
 {
 "word": "כיתות",
@@ -817,14 +2705,38 @@
 },
 {
 "word": "כלבים",
-"common": false
+"common": true
 },
 {
 "word": "כלכלה",
 "common": true
 },
 {
+"word": "כלכלן",
+"common": false
+},
+{
+"word": "כללים",
+"common": true
+},
+{
+"word": "כללית",
+"common": true
+},
+{
+"word": "כניעה",
+"common": false
+},
+{
+"word": "כנעני",
+"common": false
+},
+{
 "word": "כספים",
+"common": true
+},
+{
+"word": "כספית",
 "common": true
 },
 {
@@ -840,43 +2752,211 @@
 "common": true
 },
 {
+"word": "כשלון",
+"common": true
+},
+{
+"word": "כתבים",
+"common": true
+},
+{
 "word": "כתבתי",
 "common": true
 },
 {
-"word": "לבבות",
+"word": "כתובה",
 "common": true
+},
+{
+"word": "לאומי",
+"common": true
+},
+{
+"word": "לאופר",
+"common": false
+},
+{
+"word": "לבבות",
+"common": false
 },
 {
 "word": "לבנים",
 "common": true
 },
 {
-"word": "לומדת",
+"word": "לגיון",
+"common": false
+},
+{
+"word": "להקות",
 "common": true
+},
+{
+"word": "לוחות",
+"common": true
+},
+{
+"word": "לוחמה",
+"common": true
+},
+{
+"word": "לומדת",
+"common": false
+},
+{
+"word": "לועזי",
+"common": false
+},
+{
+"word": "לחבור",
+"common": false
+},
+{
+"word": "לחימה",
+"common": true
+},
+{
+"word": "לחלוק",
+"common": true
+},
+{
+"word": "לטיני",
+"common": false
+},
+{
+"word": "ליברל",
+"common": false
+},
+{
+"word": "ליגות",
+"common": true
+},
+{
+"word": "ליווי",
+"common": true
+},
+{
+"word": "ליטאי",
+"common": false
+},
+{
+"word": "לייזר",
+"common": true
+},
+{
+"word": "ליכוד",
+"common": false
 },
 {
 "word": "לילות",
+"common": false
+},
+{
+"word": "לימוד",
 "common": true
 },
 {
-"word": "למדתי",
+"word": "ליקוי",
 "common": true
+},
+{
+"word": "לכלכל",
+"common": false
+},
+{
+"word": "למדתי",
+"common": false
 },
 {
 "word": "למידה",
 "common": true
 },
 {
+"word": "למלוך",
+"common": false
+},
+{
 "word": "לעולם",
 "common": true
 },
 {
+"word": "לפעול",
+"common": true
+},
+{
+"word": "לפקוד",
+"common": false
+},
+{
+"word": "לשכון",
+"common": false
+},
+{
+"word": "לתקוף",
+"common": true
+},
+{
+"word": "מאובן",
+"common": false
+},
+{
+"word": "מאוחר",
+"common": true
+},
+{
+"word": "מאויש",
+"common": false
+},
+{
+"word": "מאורע",
+"common": true
+},
+{
+"word": "מאזין",
+"common": false
+},
+{
+"word": "מאפיה",
+"common": false
+},
+{
+"word": "מארחת",
+"common": false
+},
+{
+"word": "מבוקש",
+"common": true
+},
+{
+"word": "מבחין",
+"common": false
+},
+{
+"word": "מבטיח",
+"common": true
+},
+{
 "word": "מבינה",
+"common": false
+},
+{
+"word": "מבצעת",
 "common": true
 },
 {
 "word": "מברשת",
+"common": false
+},
+{
+"word": "מגביל",
+"common": false
+},
+{
+"word": "מגביר",
+"common": false
+},
+{
+"word": "מגדיר",
 "common": true
 },
 {
@@ -884,11 +2964,27 @@
 "common": true
 },
 {
-"word": "מגלשה",
+"word": "מגיעה",
 "common": true
 },
 {
+"word": "מגלשה",
+"common": false
+},
+{
 "word": "מדברת",
+"common": false
+},
+{
+"word": "מדגיש",
+"common": false
+},
+{
+"word": "מדהים",
+"common": true
+},
+{
+"word": "מדויק",
 "common": true
 },
 {
@@ -896,12 +2992,32 @@
 "common": true
 },
 {
+"word": "מדעית",
+"common": true
+},
+{
+"word": "מדרון",
+"common": false
+},
+{
 "word": "מדריך",
 "common": true
 },
 {
 "word": "מדרכה",
+"common": false
+},
+{
+"word": "מהולל",
+"common": false
+},
+{
+"word": "מהותי",
 "common": true
+},
+{
+"word": "מהימן",
+"common": false
 },
 {
 "word": "מהירה",
@@ -912,11 +3028,163 @@
 "common": true
 },
 {
+"word": "מהפכן",
+"common": false
+},
+{
+"word": "מובהק",
+"common": true
+},
+{
+"word": "מובטל",
+"common": false
+},
+{
+"word": "מוגבל",
+"common": true
+},
+{
+"word": "מוגדר",
+"common": true
+},
+{
+"word": "מודגש",
+"common": false
+},
+{
+"word": "מודיע",
+"common": false
+},
+{
+"word": "מודפס",
+"common": false
+},
+{
+"word": "מוזכר",
+"common": true
+},
+{
+"word": "מוחלט",
+"common": true
+},
+{
+"word": "מוטיב",
+"common": false
+},
+{
+"word": "מוכיח",
+"common": true
+},
+{
+"word": "מולדת",
+"common": true
+},
+{
+"word": "מוליך",
+"common": true
+},
+{
+"word": "מומחה",
+"common": true
+},
+{
+"word": "מומלץ",
+"common": true
+},
+{
+"word": "מונים",
+"common": true
+},
+{
 "word": "מונית",
+"common": false
+},
+{
+"word": "מונעת",
+"common": true
+},
+{
+"word": "מוסיף",
+"common": true
+},
+{
+"word": "מוסכם",
+"common": true
+},
+{
+"word": "מוסמך",
+"common": true
+},
+{
+"word": "מוסרי",
+"common": true
+},
+{
+"word": "מועדף",
+"common": false
+},
+{
+"word": "מועיל",
+"common": false
+},
+{
+"word": "מוענק",
+"common": false
+},
+{
+"word": "מועצה",
+"common": true
+},
+{
+"word": "מופיע",
+"common": true
+},
+{
+"word": "מופלא",
+"common": false
+},
+{
+"word": "מופרד",
+"common": false
+},
+{
+"word": "מופשט",
+"common": false
+},
+{
+"word": "מופתי",
+"common": false
+},
+{
+"word": "מוצגת",
+"common": true
+},
+{
+"word": "מוציא",
+"common": true
+},
+{
+"word": "מוצלח",
+"common": true
+},
+{
+"word": "מוצפן",
+"common": false
+},
+{
+"word": "מוקדם",
+"common": true
+},
+{
+"word": "מוקדש",
 "common": true
 },
 {
 "word": "מורות",
+"common": false
+},
+{
+"word": "מוריד",
 "common": true
 },
 {
@@ -924,7 +3192,71 @@
 "common": true
 },
 {
+"word": "מושחת",
+"common": false
+},
+{
+"word": "מותאם",
+"common": false
+},
+{
+"word": "מותיר",
+"common": false
+},
+{
+"word": "מזדמן",
+"common": false
+},
+{
+"word": "מזוין",
+"common": true
+},
+{
+"word": "מזויף",
+"common": false
+},
+{
+"word": "מזכיר",
+"common": true
+},
+{
+"word": "מזלות",
+"common": false
+},
+{
+"word": "מזמור",
+"common": false
+},
+{
 "word": "מחברת",
+"common": true
+},
+{
+"word": "מחודד",
+"common": false
+},
+{
+"word": "מחויב",
+"common": false
+},
+{
+"word": "מחזאי",
+"common": true
+},
+{
+"word": "מחזיק",
+"common": true
+},
+{
+"word": "מחזמר",
+"common": false
+},
+{
+"word": "מחליט",
+"common": true
+},
+{
+"word": "מחליף",
 "common": true
 },
 {
@@ -932,7 +3264,19 @@
 "common": true
 },
 {
+"word": "מחמיר",
+"common": false
+},
+{
 "word": "מחסום",
+"common": true
+},
+{
+"word": "מחסור",
+"common": true
+},
+{
+"word": "מחצית",
 "common": true
 },
 {
@@ -940,16 +3284,60 @@
 "common": true
 },
 {
-"word": "מטאטא",
+"word": "מחשיב",
+"common": false
+},
+{
+"word": "מחתרת",
 "common": true
+},
+{
+"word": "מטאטא",
+"common": false
 },
 {
 "word": "מטרות",
 "common": true
 },
 {
-"word": "מיטות",
+"word": "מטריד",
+"common": false
+},
+{
+"word": "מידות",
 "common": true
+},
+{
+"word": "מיוחד",
+"common": true
+},
+{
+"word": "מיוער",
+"common": false
+},
+{
+"word": "מיושן",
+"common": false
+},
+{
+"word": "מיזוג",
+"common": true
+},
+{
+"word": "מיטות",
+"common": false
+},
+{
+"word": "מיידי",
+"common": true
+},
+{
+"word": "מייחד",
+"common": false
+},
+{
+"word": "מילוא",
+"common": false
 },
 {
 "word": "מילון",
@@ -960,11 +3348,55 @@
 "common": true
 },
 {
+"word": "מימון",
+"common": true
+},
+{
+"word": "מינהל",
+"common": false
+},
+{
+"word": "מינוח",
+"common": false
+},
+{
+"word": "מינוי",
+"common": true
+},
+{
+"word": "מינים",
+"common": true
+},
+{
+"word": "מינית",
+"common": true
+},
+{
 "word": "מינרל",
+"common": false
+},
+{
+"word": "מיסטי",
+"common": false
+},
+{
+"word": "מיסים",
+"common": true
+},
+{
+"word": "מיעוט",
 "common": true
 },
 {
 "word": "מיצים",
+"common": false
+},
+{
+"word": "מירבי",
+"common": false
+},
+{
+"word": "מירוץ",
 "common": true
 },
 {
@@ -972,15 +3404,75 @@
 "common": true
 },
 {
-"word": "מכולת",
+"word": "מיתוס",
 "common": true
 },
 {
+"word": "מכולת",
+"common": false
+},
+{
 "word": "מכוער",
+"common": false
+},
+{
+"word": "מכילה",
+"common": true
+},
+{
+"word": "מכירה",
 "common": true
 },
 {
 "word": "מכללה",
+"common": false
+},
+{
+"word": "מכנים",
+"common": true
+},
+{
+"word": "מכניס",
+"common": false
+},
+{
+"word": "מכנסי",
+"common": false
+},
+{
+"word": "מכפלה",
+"common": true
+},
+{
+"word": "מכריז",
+"common": false
+},
+{
+"word": "מכריע",
+"common": true
+},
+{
+"word": "מכרסם",
+"common": false
+},
+{
+"word": "מכשול",
+"common": false
+},
+{
+"word": "מלאכה",
+"common": true
+},
+{
+"word": "מלודי",
+"common": false
+},
+{
+"word": "מלוכה",
+"common": false
+},
+{
+"word": "מלחין",
 "common": true
 },
 {
@@ -996,23 +3488,79 @@
 "common": true
 },
 {
+"word": "ממליץ",
+"common": true
+},
+{
+"word": "ממציא",
+"common": false
+},
+{
+"word": "ממשיך",
+"common": true
+},
+{
+"word": "ממתין",
+"common": false
+},
+{
+"word": "מנהיג",
+"common": true
+},
+{
+"word": "מנהלת",
+"common": true
+},
+{
+"word": "מנהרה",
+"common": false
+},
+{
 "word": "מנוחה",
 "common": true
 },
 {
 "word": "מנורה",
+"common": false
+},
+{
+"word": "מניות",
+"common": true
+},
+{
+"word": "מניין",
 "common": true
 },
 {
 "word": "מנסרה",
-"common": true
+"common": false
 },
 {
 "word": "מנעול",
+"common": false
+},
+{
+"word": "מסגרת",
+"common": true
+},
+{
+"word": "מסובך",
+"common": true
+},
+{
+"word": "מסוגל",
+"common": true
+},
+{
+"word": "מסוים",
 "common": true
 },
 {
 "word": "מסופק",
+"common": false
+},
+{
+"word": "מסחרי",
 "common": true
 },
 {
@@ -1024,84 +3572,296 @@
 "common": true
 },
 {
+"word": "מסכים",
+"common": true
+},
+{
 "word": "מסלול",
 "common": true
 },
 {
-"word": "מסננת",
+"word": "מסמלת",
 "common": true
 },
 {
+"word": "מסננת",
+"common": false
+},
+{
 "word": "מסעדה",
+"common": false
+},
+{
+"word": "מספיק",
 "common": true
 },
 {
 "word": "מספרה",
-"common": true
+"common": false
 },
 {
 "word": "מסקנה",
+"common": false
+},
+{
+"word": "מסרים",
 "common": true
+},
+{
+"word": "מסתיר",
+"common": false
+},
+{
+"word": "מסתכל",
+"common": false
+},
+{
+"word": "מסתמך",
+"common": false
 },
 {
 "word": "מעבדה",
-"common": true
+"common": false
+},
+{
+"word": "מעוגל",
+"common": false
+},
+{
+"word": "מעוות",
+"common": false
 },
 {
 "word": "מעוין",
+"common": false
+},
+{
+"word": "מעופף",
+"common": false
+},
+{
+"word": "מעמיק",
+"common": true
+},
+{
+"word": "מעניק",
+"common": true
+},
+{
+"word": "מעסיק",
+"common": false
+},
+{
+"word": "מעריך",
+"common": true
+},
+{
+"word": "מפגין",
+"common": false
+},
+{
+"word": "מפואר",
 "common": true
 },
 {
 "word": "מפוחד",
+"common": false
+},
+{
+"word": "מפחיד",
+"common": false
+},
+{
+"word": "מפלצת",
+"common": false
+},
+{
+"word": "מפסיד",
+"common": false
+},
+{
+"word": "מפציץ",
+"common": false
+},
+{
+"word": "מפריע",
+"common": true
+},
+{
+"word": "מפתיע",
+"common": true
+},
+{
+"word": "מצביא",
+"common": false
+},
+{
+"word": "מצביע",
+"common": true
+},
+{
+"word": "מצודה",
+"common": false
+},
+{
+"word": "מצווה",
+"common": true
+},
+{
+"word": "מצויד",
+"common": false
+},
+{
+"word": "מצויה",
+"common": true
+},
+{
+"word": "מצחיק",
+"common": false
+},
+{
+"word": "מצטבר",
+"common": false
+},
+{
+"word": "מצטרף",
+"common": true
+},
+{
+"word": "מציגה",
+"common": true
+},
+{
+"word": "מצליח",
 "common": true
 },
 {
 "word": "מצלמה",
-"common": true
+"common": false
+},
+{
+"word": "מצרית",
+"common": false
+},
+{
+"word": "מקדים",
+"common": false
 },
 {
 "word": "מקהלה",
+"common": false
+},
+{
+"word": "מקובל",
+"common": true
+},
+{
+"word": "מקודד",
+"common": false
+},
+{
+"word": "מקוון",
+"common": false
+},
+{
+"word": "מקורב",
+"common": false
+},
+{
+"word": "מקיפה",
 "common": true
 },
 {
 "word": "מקלדת",
-"common": true
+"common": false
 },
 {
 "word": "מקלחת",
-"common": true
+"common": false
 },
 {
 "word": "מקפיא",
-"common": true
+"common": false
+},
+{
+"word": "מקפיד",
+"common": false
 },
 {
 "word": "מקצוע",
 "common": true
 },
 {
+"word": "מרהיב",
+"common": false
+},
+{
 "word": "מרובע",
 "common": true
 },
 {
-"word": "מרפאה",
+"word": "מרוחק",
 "common": true
+},
+{
+"word": "מרוכז",
+"common": false
+},
+{
+"word": "מרחיב",
+"common": false
+},
+{
+"word": "מרחיק",
+"common": false
+},
+{
+"word": "מרידה",
+"common": false
+},
+{
+"word": "מרכבה",
+"common": true
+},
+{
+"word": "מרכזי",
+"common": true
+},
+{
+"word": "מרפאה",
+"common": false
 },
 {
 "word": "מרפסת",
-"common": true
+"common": false
 },
 {
 "word": "מרקחת",
-"common": true
+"common": false
 },
 {
 "word": "מרקים",
+"common": false
+},
+{
+"word": "מרשים",
+"common": true
+},
+{
+"word": "משאיר",
 "common": true
 },
 {
 "word": "משאית",
-"common": true
+"common": false
+},
+{
+"word": "משובח",
+"common": false
+},
+{
+"word": "משוגע",
+"common": false
 },
 {
 "word": "משולש",
@@ -1112,7 +3872,19 @@
 "common": true
 },
 {
+"word": "משחית",
+"common": false
+},
+{
+"word": "משחקת",
+"common": true
+},
+{
 "word": "משטרה",
+"common": true
+},
+{
+"word": "משיכה",
 "common": true
 },
 {
@@ -1120,7 +3892,27 @@
 "common": true
 },
 {
+"word": "משכיל",
+"common": false
+},
+{
+"word": "משלבת",
+"common": false
+},
+{
 "word": "משלוח",
+"common": true
+},
+{
+"word": "משלחת",
+"common": true
+},
+{
+"word": "משלים",
+"common": true
+},
+{
+"word": "משמשת",
 "common": true
 },
 {
@@ -1128,7 +3920,131 @@
 "common": true
 },
 {
+"word": "משפטן",
+"common": false
+},
+{
+"word": "משפיע",
+"common": true
+},
+{
+"word": "משקיע",
+"common": false
+},
+{
+"word": "משקיף",
+"common": false
+},
+{
 "word": "משקפי",
+"common": false
+},
+{
+"word": "משתלב",
+"common": false
+},
+{
+"word": "משתמש",
+"common": true
+},
+{
+"word": "משתנה",
+"common": true
+},
+{
+"word": "משתרע",
+"common": true
+},
+{
+"word": "משתתף",
+"common": true
+},
+{
+"word": "מתאבק",
+"common": false
+},
+{
+"word": "מתארת",
+"common": true
+},
+{
+"word": "מתבטא",
+"common": true
+},
+{
+"word": "מתבסס",
+"common": true
+},
+{
+"word": "מתבקש",
+"common": false
+},
+{
+"word": "מתופף",
+"common": false
+},
+{
+"word": "מתחבר",
+"common": false
+},
+{
+"word": "מתחיל",
+"common": true
+},
+{
+"word": "מתחלף",
+"common": false
+},
+{
+"word": "מתחלק",
+"common": true
+},
+{
+"word": "מתחרה",
+"common": true
+},
+{
+"word": "מתכון",
+"common": false
+},
+{
+"word": "מתכות",
+"common": true
+},
+{
+"word": "מתכנת",
+"common": false
+},
+{
+"word": "מתמחה",
+"common": false
+},
+{
+"word": "מתמטי",
+"common": true
+},
+{
+"word": "מתמקד",
+"common": true
+},
+{
+"word": "מתמשך",
+"common": true
+},
+{
+"word": "מתנגד",
+"common": true
+},
+{
+"word": "מתנדב",
+"common": false
+},
+{
+"word": "מתנהג",
+"common": false
+},
+{
+"word": "מתנהל",
 "common": true
 },
 {
@@ -1136,12 +4052,96 @@
 "common": true
 },
 {
+"word": "מתנקש",
+"common": false
+},
+{
+"word": "מתנשא",
+"common": false
+},
+{
+"word": "מתעלם",
+"common": false
+},
+{
+"word": "מתפלל",
+"common": false
+},
+{
+"word": "מתקדם",
+"common": true
+},
+{
+"word": "מתקרב",
+"common": false
+},
+{
+"word": "מתקשר",
+"common": false
+},
+{
+"word": "מתרחש",
+"common": true
+},
+{
+"word": "מתרכז",
+"common": false
+},
+{
+"word": "נאצים",
+"common": false
+},
+{
+"word": "נאצית",
+"common": false
+},
+{
+"word": "נבואה",
+"common": true
+},
+{
+"word": "נגזרת",
+"common": true
+},
+{
+"word": "נגינה",
+"common": true
+},
+{
+"word": "נגנים",
+"common": true
+},
+{
+"word": "נגרמת",
+"common": false
+},
+{
+"word": "נדידה",
+"common": false
+},
+{
 "word": "נדנדה",
+"common": false
+},
+{
+"word": "נדרשת",
 "common": true
 },
 {
 "word": "נהגים",
+"common": false
+},
+{
+"word": "נהוגה",
 "common": true
+},
+{
+"word": "נהיית",
+"common": false
+},
+{
+"word": "נהלים",
+"common": false
 },
 {
 "word": "נהרות",
@@ -1152,11 +4152,87 @@
 "common": false
 },
 {
+"word": "נובעת",
+"common": true
+},
+{
+"word": "נוגדן",
+"common": false
+},
+{
+"word": "נוגעת",
+"common": false
+},
+{
+"word": "נוכחי",
+"common": false
+},
+{
 "word": "נוסחה",
 "common": true
 },
 {
+"word": "נוספת",
+"common": true
+},
+{
+"word": "נוקשה",
+"common": true
+},
+{
+"word": "נורדי",
+"common": false
+},
+{
+"word": "נורמה",
+"common": false
+},
+{
+"word": "נורמן",
+"common": false
+},
+{
+"word": "נושאת",
+"common": true
+},
+{
+"word": "נזקים",
+"common": true
+},
+{
+"word": "נחושת",
+"common": true
+},
+{
+"word": "נחיתה",
+"common": false
+},
+{
+"word": "נחלים",
+"common": true
+},
+{
+"word": "נחתים",
+"common": false
+},
+{
+"word": "נטייה",
+"common": true
+},
+{
+"word": "ניבים",
+"common": false
+},
+{
 "word": "ניגוד",
+"common": false
+},
+{
+"word": "ניגרי",
+"common": false
+},
+{
+"word": "נידון",
 "common": true
 },
 {
@@ -1164,12 +4240,48 @@
 "common": true
 },
 {
+"word": "ניווט",
+"common": true
+},
+{
+"word": "ניזון",
+"common": true
+},
+{
+"word": "ניזוק",
+"common": false
+},
+{
+"word": "נימוק",
+"common": false
+},
+{
+"word": "ניסוח",
+"common": true
+},
+{
 "word": "ניסוי",
 "common": true
 },
 {
-"word": "ניקוי",
+"word": "ניצול",
 "common": true
+},
+{
+"word": "ניצוץ",
+"common": false
+},
+{
+"word": "ניקוד",
+"common": true
+},
+{
+"word": "ניקוז",
+"common": false
+},
+{
+"word": "ניקוי",
+"common": false
 },
 {
 "word": "ניתוח",
@@ -1177,7 +4289,15 @@
 },
 {
 "word": "נכדים",
+"common": false
+},
+{
+"word": "נכונה",
 "common": true
+},
+{
+"word": "נכסים",
+"common": false
 },
 {
 "word": "נמוכה",
@@ -1188,11 +4308,51 @@
 "common": true
 },
 {
+"word": "נסיגה",
+"common": true
+},
+{
+"word": "נסיון",
+"common": true
+},
+{
+"word": "נסיכה",
+"common": false
+},
+{
 "word": "נסיעה",
 "common": true
 },
 {
 "word": "נסעתי",
+"common": false
+},
+{
+"word": "נערים",
+"common": true
+},
+{
+"word": "נפוצה",
+"common": true
+},
+{
+"word": "נפילה",
+"common": false
+},
+{
+"word": "נפילת",
+"common": true
+},
+{
+"word": "נצחון",
+"common": true
+},
+{
+"word": "נצרות",
+"common": false
+},
+{
+"word": "נקבות",
 "common": true
 },
 {
@@ -1200,24 +4360,112 @@
 "common": true
 },
 {
-"word": "נשנוש",
+"word": "נראים",
 "common": true
+},
+{
+"word": "נראית",
+"common": true
+},
+{
+"word": "נשימה",
+"common": true
+},
+{
+"word": "נשיפה",
+"common": true
+},
+{
+"word": "נתונה",
+"common": true
+},
+{
+"word": "נתקבל",
+"common": false
 },
 {
 "word": "סביבה",
 "common": true
 },
 {
-"word": "סוודר",
+"word": "סגנון",
 "common": true
+},
+{
+"word": "סדירה",
+"common": false
+},
+{
+"word": "סדרות",
+"common": true
+},
+{
+"word": "סדרים",
+"common": false
+},
+{
+"word": "סדרתי",
+"common": false
+},
+{
+"word": "סוגיה",
+"common": false
+},
+{
+"word": "סוגים",
+"common": true
+},
+{
+"word": "סודות",
+"common": true
+},
+{
+"word": "סוודר",
+"common": false
 },
 {
 "word": "סוכות",
-"common": true
+"common": false
+},
+{
+"word": "סולטן",
+"common": false
 },
 {
 "word": "סוללה",
+"common": false
+},
+{
+"word": "סונים",
+"common": false
+},
+{
+"word": "סוסים",
 "common": true
+},
+{
+"word": "סופית",
+"common": true
+},
+{
+"word": "סופרת",
+"common": true
+},
+{
+"word": "סורים",
+"common": false
+},
+{
+"word": "סטטוס",
+"common": false
+},
+{
+"word": "סיבוב",
+"common": true
+},
+{
+"word": "סיבוך",
+"common": false
 },
 {
 "word": "סיבות",
@@ -1225,10 +4473,30 @@
 },
 {
 "word": "סיבים",
-"common": true
+"common": false
+},
+{
+"word": "סיבתי",
+"common": false
 },
 {
 "word": "סידור",
+"common": true
+},
+{
+"word": "סידרה",
+"common": false
+},
+{
+"word": "סיווג",
+"common": true
+},
+{
+"word": "סיומת",
+"common": false
+},
+{
+"word": "סיכוי",
 "common": true
 },
 {
@@ -1236,23 +4504,75 @@
 "common": true
 },
 {
+"word": "סיכון",
+"common": true
+},
+{
+"word": "סילון",
+"common": true
+},
+{
+"word": "סימון",
+"common": true
+},
+{
+"word": "סינגל",
+"common": true
+},
+{
+"word": "סינים",
+"common": false
+},
+{
+"word": "סינית",
+"common": true
+},
+{
+"word": "סיסמה",
+"common": false
+},
+{
+"word": "סיעות",
+"common": false
+},
+{
+"word": "סיפוח",
+"common": false
+},
+{
+"word": "סיפון",
+"common": false
+},
+{
 "word": "סיפור",
 "common": true
 },
 {
 "word": "סירופ",
+"common": false
+},
+{
+"word": "סכסוך",
 "common": true
+},
+{
+"word": "סלאבי",
+"common": false
 },
 {
 "word": "סלטים",
-"common": true
-},
-{
-"word": "סלעות",
 "common": false
 },
 {
 "word": "סלעים",
+"common": true
+},
+{
+"word": "סמוכה",
+"common": false
+},
+{
+"word": "סמינר",
 "common": false
 },
 {
@@ -1260,7 +4580,31 @@
 "common": true
 },
 {
+"word": "סמלים",
+"common": true
+},
+{
 "word": "סנגור",
+"common": false
+},
+{
+"word": "סנטור",
+"common": false
+},
+{
+"word": "סנפיר",
+"common": false
+},
+{
+"word": "סעודה",
+"common": false
+},
+{
+"word": "סעודי",
+"common": false
+},
+{
+"word": "ספורט",
 "common": true
 },
 {
@@ -1268,15 +4612,51 @@
 "common": true
 },
 {
-"word": "ספרות",
+"word": "ספיקה",
 "common": false
+},
+{
+"word": "ספירה",
+"common": false
+},
+{
+"word": "ספנות",
+"common": false
+},
+{
+"word": "ספרות",
+"common": true
 },
 {
 "word": "ספרים",
 "common": true
 },
 {
+"word": "סצינה",
+"common": false
+},
+{
+"word": "סקוטי",
+"common": false
+},
+{
+"word": "סרבים",
+"common": false
+},
+{
+"word": "סרטון",
+"common": false
+},
+{
 "word": "סרטים",
+"common": true
+},
+{
+"word": "סרטני",
+"common": false
+},
+{
+"word": "סתירה",
 "common": true
 },
 {
@@ -1285,10 +4665,14 @@
 },
 {
 "word": "עבדים",
-"common": false
+"common": true
 },
 {
 "word": "עבודה",
+"common": true
+},
+{
+"word": "עבירה",
 "common": true
 },
 {
@@ -1296,7 +4680,23 @@
 "common": true
 },
 {
+"word": "עברתי",
+"common": false
+},
+{
+"word": "עדיפה",
+"common": false
+},
+{
 "word": "עדכון",
+"common": true
+},
+{
+"word": "עדכני",
+"common": false
+},
+{
+"word": "עובדה",
 "common": true
 },
 {
@@ -1304,7 +4704,19 @@
 "common": true
 },
 {
+"word": "עוברת",
+"common": true
+},
+{
 "word": "עוגות",
+"common": false
+},
+{
+"word": "עולים",
+"common": true
+},
+{
+"word": "עולמי",
 "common": true
 },
 {
@@ -1316,6 +4728,10 @@
 "common": true
 },
 {
+"word": "עוסקת",
+"common": true
+},
+{
 "word": "עופות",
 "common": true
 },
@@ -1324,12 +4740,32 @@
 "common": true
 },
 {
+"word": "עטיפה",
+"common": false
+},
+{
+"word": "עיבוד",
+"common": true
+},
+{
 "word": "עיגול",
+"common": false
+},
+{
+"word": "עיוור",
+"common": false
+},
+{
+"word": "עיוות",
+"common": false
+},
+{
+"word": "עיטור",
 "common": true
 },
 {
 "word": "עייפה",
-"common": true
+"common": false
 },
 {
 "word": "עיירה",
@@ -1337,10 +4773,30 @@
 },
 {
 "word": "עיכוב",
+"common": false
+},
+{
+"word": "עיכול",
+"common": false
+},
+{
+"word": "עילית",
 "common": true
 },
 {
+"word": "עימות",
+"common": true
+},
+{
+"word": "עינוי",
+"common": false
+},
+{
 "word": "עיסוי",
+"common": false
+},
+{
+"word": "עיסוק",
 "common": true
 },
 {
@@ -1348,16 +4804,32 @@
 "common": true
 },
 {
+"word": "עיצור",
+"common": true
+},
+{
+"word": "עיקרי",
+"common": true
+},
+{
+"word": "עירום",
+"common": false
+},
+{
 "word": "עירות",
 "common": false
 },
 {
 "word": "עיריה",
-"common": true
+"common": false
 },
 {
 "word": "עירים",
 "common": false
+},
+{
+"word": "עישון",
+"common": true
 },
 {
 "word": "עיתון",
@@ -1365,10 +4837,6 @@
 },
 {
 "word": "עכביש",
-"common": true
-},
-{
-"word": "עלהות",
 "common": false
 },
 {
@@ -1376,7 +4844,43 @@
 "common": false
 },
 {
+"word": "עליון",
+"common": true
+},
+{
+"word": "עלייה",
+"common": true
+},
+{
 "word": "עלילה",
+"common": true
+},
+{
+"word": "עלמין",
+"common": false
+},
+{
+"word": "עלפים",
+"common": false
+},
+{
+"word": "עמדות",
+"common": true
+},
+{
+"word": "עמוקה",
+"common": true
+},
+{
+"word": "עמותה",
+"common": true
+},
+{
+"word": "עמידה",
+"common": true
+},
+{
+"word": "עממית",
 "common": true
 },
 {
@@ -1389,10 +4893,14 @@
 },
 {
 "word": "ענבים",
-"common": true
+"common": false
 },
 {
 "word": "עניבה",
+"common": false
+},
+{
+"word": "עניים",
 "common": true
 },
 {
@@ -1400,36 +4908,76 @@
 "common": true
 },
 {
+"word": "ענישה",
+"common": true
+},
+{
 "word": "עננים",
+"common": false
+},
+{
+"word": "ענפים",
+"common": true
+},
+{
+"word": "ענקים",
+"common": false
+},
+{
+"word": "עסקים",
 "common": true
 },
 {
 "word": "עפרון",
-"common": true
+"common": false
 },
 {
 "word": "עפרות",
 "common": false
 },
 {
-"word": "עפרים",
+"word": "עצבים",
 "common": false
 },
 {
 "word": "עצבני",
-"common": true
+"common": false
 },
 {
 "word": "עצובה",
+"common": false
+},
+{
+"word": "עצומה",
 "common": true
 },
 {
 "word": "עצירה",
+"common": false
+},
+{
+"word": "עצמאי",
+"common": true
+},
+{
+"word": "עצמות",
+"common": true
+},
+{
+"word": "עצמים",
+"common": true
+},
+{
+"word": "עצמית",
+"common": true
+},
+{
+"word": "עקרון",
 "common": true
 },
 {
 "word": "ערבוב",
-"common": true
+"common": false
 },
 {
 "word": "ערבים",
@@ -1440,7 +4988,31 @@
 "common": true
 },
 {
+"word": "ערובה",
+"common": true
+},
+{
 "word": "עריכה",
+"common": true
+},
+{
+"word": "ערכות",
+"common": false
+},
+{
+"word": "ערכים",
+"common": true
+},
+{
+"word": "ערעור",
+"common": false
+},
+{
+"word": "עשויה",
+"common": true
+},
+{
+"word": "עשירה",
 "common": true
 },
 {
@@ -1448,7 +5020,67 @@
 "common": true
 },
 {
+"word": "עשרים",
+"common": true
+},
+{
+"word": "עתידי",
+"common": true
+},
+{
+"word": "עתיקה",
+"common": true
+},
+{
+"word": "פגיעה",
+"common": true
+},
+{
 "word": "פגישה",
+"common": true
+},
+{
+"word": "פדרלי",
+"common": false
+},
+{
+"word": "פואמה",
+"common": false
+},
+{
+"word": "פוטון",
+"common": false
+},
+{
+"word": "פולחן",
+"common": true
+},
+{
+"word": "פוליס",
+"common": false
+},
+{
+"word": "פומבי",
+"common": true
+},
+{
+"word": "פונטי",
+"common": false
+},
+{
+"word": "פונים",
+"common": true
+},
+{
+"word": "פועלת",
+"common": true
+},
+{
+"word": "פורום",
+"common": true
+},
+{
+"word": "פורטל",
 "common": true
 },
 {
@@ -1456,11 +5088,95 @@
 "common": true
 },
 {
-"word": "פותחן",
+"word": "פורמט",
 "common": true
 },
 {
+"word": "פורסם",
+"common": true
+},
+{
+"word": "פותחן",
+"common": false
+},
+{
+"word": "פזמון",
+"common": false
+},
+{
+"word": "פטרון",
+"common": false
+},
+{
+"word": "פיגוע",
+"common": true
+},
+{
+"word": "פיזית",
+"common": true
+},
+{
+"word": "פילוג",
+"common": false
+},
+{
+"word": "פילים",
+"common": false
+},
+{
+"word": "פינוי",
+"common": true
+},
+{
+"word": "פינים",
+"common": false
+},
+{
+"word": "פינית",
+"common": false
+},
+{
 "word": "פיסול",
+"common": true
+},
+{
+"word": "פיסקה",
+"common": true
+},
+{
+"word": "פיצוי",
+"common": true
+},
+{
+"word": "פיצול",
+"common": true
+},
+{
+"word": "פיצוץ",
+"common": true
+},
+{
+"word": "פיקוד",
+"common": true
+},
+{
+"word": "פיקוח",
+"common": true
+},
+{
+"word": "פיקסל",
+"common": false
+},
+{
+"word": "פירוט",
+"common": true
+},
+{
+"word": "פירוק",
+"common": true
+},
+{
+"word": "פירוש",
 "common": true
 },
 {
@@ -1468,12 +5184,64 @@
 "common": true
 },
 {
+"word": "פירסם",
+"common": false
+},
+{
 "word": "פיתוח",
 "common": true
 },
 {
+"word": "פלגים",
+"common": false
+},
+{
 "word": "פלוגה",
 "common": true
+},
+{
+"word": "פליטה",
+"common": false
+},
+{
+"word": "פלילי",
+"common": true
+},
+{
+"word": "פלישה",
+"common": true
+},
+{
+"word": "פלנקס",
+"common": false
+},
+{
+"word": "פלסטי",
+"common": false
+},
+{
+"word": "פניות",
+"common": false
+},
+{
+"word": "פנייה",
+"common": true
+},
+{
+"word": "פנימי",
+"common": true
+},
+{
+"word": "פסולת",
+"common": true
+},
+{
+"word": "פסיפס",
+"common": false
+},
+{
+"word": "פסיקה",
+"common": false
 },
 {
 "word": "פסלים",
@@ -1484,27 +5252,119 @@
 "common": true
 },
 {
-"word": "פעמון",
+"word": "פסקול",
+"common": false
+},
+{
+"word": "פעולה",
 "common": true
 },
 {
-"word": "פרחות",
+"word": "פעילה",
+"common": true
+},
+{
+"word": "פעמון",
+"common": false
+},
+{
+"word": "פעמים",
+"common": true
+},
+{
+"word": "פערים",
+"common": false
+},
+{
+"word": "פצצות",
+"common": true
+},
+{
+"word": "פקודה",
+"common": true
+},
+{
+"word": "פרודי",
+"common": false
+},
+{
+"word": "פרווה",
+"common": true
+},
+{
+"word": "פרוסי",
 "common": false
 },
 {
 "word": "פרחים",
+"common": true
+},
+{
+"word": "פרטים",
+"common": true
+},
+{
+"word": "פרטית",
+"common": true
+},
+{
+"word": "פרידה",
 "common": false
 },
 {
-"word": "פריות",
-"common": false
+"word": "פריחה",
+"common": true
 },
 {
 "word": "פריים",
 "common": false
 },
 {
+"word": "פריצה",
+"common": false
+},
+{
 "word": "פרישה",
+"common": false
+},
+{
+"word": "פרמטר",
+"common": false
+},
+{
+"word": "פרסום",
+"common": true
+},
+{
+"word": "פרסים",
+"common": true
+},
+{
+"word": "פרסית",
+"common": false
+},
+{
+"word": "פרעות",
+"common": true
+},
+{
+"word": "פרקים",
+"common": true
+},
+{
+"word": "פרשים",
+"common": true
+},
+{
+"word": "פשוטה",
+"common": true
+},
+{
+"word": "פתוחה",
+"common": true
+},
+{
+"word": "פתיחה",
 "common": true
 },
 {
@@ -1512,31 +5372,107 @@
 "common": true
 },
 {
-"word": "צביעה",
+"word": "צבאות",
 "common": true
+},
+{
+"word": "צבאית",
+"common": true
+},
+{
+"word": "צביעה",
+"common": false
 },
 {
 "word": "צבעים",
 "common": true
 },
 {
-"word": "צהובה",
+"word": "צדדים",
 "common": true
 },
 {
+"word": "צהובה",
+"common": false
+},
+{
+"word": "צוואר",
+"common": false
+},
+{
 "word": "צוללת",
+"common": false
+},
+{
+"word": "צופים",
+"common": true
+},
+{
+"word": "צורות",
+"common": true
+},
+{
+"word": "ציבור",
+"common": true
+},
+{
+"word": "ציווי",
+"common": false
+},
+{
+"word": "ציוני",
+"common": true
+},
+{
+"word": "ציטוט",
 "common": true
 },
 {
 "word": "ציירת",
-"common": true
+"common": false
 },
 {
 "word": "צילום",
 "common": true
 },
 {
+"word": "צינור",
+"common": true
+},
+{
+"word": "ציפור",
+"common": true
+},
+{
+"word": "צירוף",
+"common": true
+},
+{
+"word": "צירים",
+"common": true
+},
+{
+"word": "צלבני",
+"common": false
+},
+{
+"word": "צלחות",
+"common": false
+},
+{
 "word": "צלייה",
+"common": false
+},
+{
+"word": "צללים",
+"common": false
+},
+{
+"word": "צלעות",
+"common": true
+},
+{
+"word": "צמחים",
 "common": true
 },
 {
@@ -1545,11 +5481,23 @@
 },
 {
 "word": "צנצנת",
+"common": false
+},
+{
+"word": "צעדים",
+"common": true
+},
+{
+"word": "צעירה",
 "common": true
 },
 {
 "word": "צעצוע",
-"common": true
+"common": false
+},
+{
+"word": "צפוני",
+"common": false
 },
 {
 "word": "צפייה",
@@ -1557,14 +5505,94 @@
 },
 {
 "word": "צפרדע",
-"common": true
+"common": false
 },
 {
 "word": "צריכה",
 "common": true
 },
 {
+"word": "צרכים",
+"common": true
+},
+{
+"word": "קאמרי",
+"common": false
+},
+{
+"word": "קאנון",
+"common": false
+},
+{
+"word": "קבועה",
+"common": true
+},
+{
+"word": "קבוצה",
+"common": true
+},
+{
+"word": "קבורה",
+"common": true
+},
+{
+"word": "קבינט",
+"common": false
+},
+{
+"word": "קביעה",
+"common": true
+},
+{
+"word": "קבצים",
+"common": true
+},
+{
+"word": "קברות",
+"common": true
+},
+{
+"word": "קדומה",
+"common": true
+},
+{
+"word": "קדושה",
+"common": true
+},
+{
+"word": "קדמון",
+"common": false
+},
+{
+"word": "קהילה",
+"common": true
+},
+{
+"word": "קובעת",
+"common": true
+},
+{
+"word": "קודמת",
+"common": true
+},
+{
+"word": "קווים",
+"common": true
+},
+{
+"word": "קווקז",
+"common": false
+},
+{
+"word": "קוטבי",
+"common": false
+},
+{
 "word": "קולות",
+"common": true
+},
+{
+"word": "קולטן",
 "common": false
 },
 {
@@ -1572,11 +5600,35 @@
 "common": false
 },
 {
+"word": "קומדי",
+"common": false
+},
+{
+"word": "קומון",
+"common": false
+},
+{
+"word": "קומית",
+"common": false
+},
+{
+"word": "קופים",
+"common": false
+},
+{
+"word": "קופסא",
+"common": false
+},
+{
 "word": "קופסה",
-"common": true
+"common": false
 },
 {
 "word": "קוראת",
+"common": false
+},
+{
+"word": "קורבן",
 "common": true
 },
 {
@@ -1584,8 +5636,32 @@
 "common": true
 },
 {
+"word": "קטלוג",
+"common": false
+},
+{
+"word": "קטלני",
+"common": false
+},
+{
+"word": "קטנות",
+"common": true
+},
+{
 "word": "קטנים",
 "common": true
+},
+{
+"word": "קטעים",
+"common": true
+},
+{
+"word": "קיבוץ",
+"common": true
+},
+{
+"word": "קידוד",
+"common": false
 },
 {
 "word": "קידום",
@@ -1596,11 +5672,31 @@
 "common": true
 },
 {
-"word": "קילוף",
+"word": "קיטור",
 "common": true
 },
 {
+"word": "קיימת",
+"common": true
+},
+{
+"word": "קילוף",
+"common": false
+},
+{
 "word": "קינוח",
+"common": false
+},
+{
+"word": "קיסרי",
+"common": true
+},
+{
+"word": "קיצון",
+"common": false
+},
+{
+"word": "קיצור",
 "common": true
 },
 {
@@ -1609,14 +5705,74 @@
 },
 {
 "word": "קישוט",
-"common": true
+"common": false
 },
 {
 "word": "קישור",
 "common": true
 },
 {
+"word": "קלאסי",
+"common": true
+},
+{
+"word": "קלטות",
+"common": false
+},
+{
+"word": "קלטים",
+"common": false
+},
+{
+"word": "קליטה",
+"common": false
+},
+{
+"word": "קליני",
+"common": false
+},
+{
+"word": "קלעים",
+"common": false
+},
+{
+"word": "קלפים",
+"common": true
+},
+{
+"word": "קמפוס",
+"common": false
+},
+{
+"word": "קנאים",
+"common": false
+},
+{
+"word": "קנדית",
+"common": false
+},
+{
+"word": "קנטון",
+"common": false
+},
+{
 "word": "קניון",
+"common": false
+},
+{
+"word": "קניות",
+"common": false
+},
+{
+"word": "קניין",
+"common": false
+},
+{
+"word": "קסמים",
+"common": false
+},
+{
+"word": "קפיצה",
 "common": true
 },
 {
@@ -1624,11 +5780,79 @@
 "common": true
 },
 {
+"word": "קצרמר",
+"common": true
+},
+{
+"word": "קראים",
+"common": false
+},
+{
+"word": "קראית",
+"common": false
+},
+{
 "word": "קראתי",
 "common": true
 },
 {
+"word": "קרבות",
+"common": true
+},
+{
+"word": "קרדיט",
+"common": true
+},
+{
+"word": "קרובה",
+"common": true
+},
+{
+"word": "קרויה",
+"common": true
+},
+{
+"word": "קרחון",
+"common": false
+},
+{
+"word": "קריאה",
+"common": true
+},
+{
+"word": "קריטי",
+"common": false
+},
+{
+"word": "קרינה",
+"common": true
+},
+{
 "word": "קרסול",
+"common": false
+},
+{
+"word": "קרקעי",
+"common": false
+},
+{
+"word": "קשורה",
+"common": true
+},
+{
+"word": "קשיים",
+"common": true
+},
+{
+"word": "קשרים",
+"common": true
+},
+{
+"word": "קשתות",
+"common": true
+},
+{
+"word": "ראויה",
 "common": true
 },
 {
@@ -1636,39 +5860,119 @@
 "common": true
 },
 {
-"word": "ראינו",
+"word": "ראיות",
 "common": true
+},
+{
+"word": "ראייה",
+"common": true
+},
+{
+"word": "ראינו",
+"common": false
 },
 {
 "word": "ראיתי",
 "common": true
 },
 {
-"word": "ראשים",
+"word": "ראשון",
 "common": true
 },
 {
-"word": "רגעות",
+"word": "ראשים",
 "common": false
+},
+{
+"word": "ראשית",
+"common": true
+},
+{
+"word": "רבייה",
+"common": true
+},
+{
+"word": "רביעי",
+"common": true
+},
+{
+"word": "רבנות",
+"common": false
+},
+{
+"word": "רבנים",
+"common": true
+},
+{
+"word": "רבנית",
+"common": false
+},
+{
+"word": "רגילה",
+"common": true
+},
+{
+"word": "רגלים",
+"common": true
 },
 {
 "word": "רגעים",
 "common": false
 },
 {
+"word": "רגשות",
+"common": true
+},
+{
+"word": "רואים",
+"common": true
+},
+{
 "word": "רובוט",
+"common": false
+},
+{
+"word": "רווחה",
+"common": true
+},
+{
+"word": "רווחת",
 "common": true
 },
 {
 "word": "רוחות",
-"common": false
+"common": true
 },
 {
-"word": "רוחים",
+"word": "רוחני",
+"common": true
+},
+{
+"word": "רוטור",
 "common": false
 },
 {
 "word": "רוכסן",
+"common": false
+},
+{
+"word": "רומאי",
+"common": false
+},
+{
+"word": "רומאן",
+"common": false
+},
+{
+"word": "רומים",
+"common": false
+},
+{
+"word": "רומית",
+"common": true
+},
+{
+"word": "רוסים",
 "common": true
 },
 {
@@ -1677,11 +5981,31 @@
 },
 {
 "word": "רוקדת",
+"common": false
+},
+{
+"word": "רחבות",
+"common": true
+},
+{
+"word": "רחמים",
 "common": true
 },
 {
 "word": "ריאות",
 "common": true
+},
+{
+"word": "ריאלי",
+"common": false
+},
+{
+"word": "ריבוי",
+"common": true
+},
+{
+"word": "ריבון",
+"common": false
 },
 {
 "word": "ריבוע",
@@ -1692,15 +6016,71 @@
 "common": true
 },
 {
+"word": "ריגול",
+"common": true
+},
+{
 "word": "ריכוז",
 "common": true
 },
 {
-"word": "רמזור",
+"word": "רימון",
 "common": true
 },
 {
+"word": "ריסון",
+"common": false
+},
+{
+"word": "ריקוד",
+"common": true
+},
+{
+"word": "רישום",
+"common": true
+},
+{
+"word": "רישמי",
+"common": false
+},
+{
+"word": "רכבות",
+"common": true
+},
+{
+"word": "רכבים",
+"common": false
+},
+{
+"word": "רכישה",
+"common": false
+},
+{
+"word": "רמזור",
+"common": false
+},
+{
 "word": "רעיון",
+"common": true
+},
+{
+"word": "רפואה",
+"common": true
+},
+{
+"word": "רפואי",
+"common": true
+},
+{
+"word": "רצויה",
+"common": false
+},
+{
+"word": "רצועה",
+"common": false
+},
+{
+"word": "רציני",
 "common": true
 },
 {
@@ -1708,23 +6088,99 @@
 "common": true
 },
 {
-"word": "שאיפה",
+"word": "רקטות",
 "common": true
+},
+{
+"word": "רשיון",
+"common": true
+},
+{
+"word": "רשימה",
+"common": true
+},
+{
+"word": "רשמית",
+"common": true
+},
+{
+"word": "שאיפה",
+"common": false
 },
 {
 "word": "שאלות",
 "common": true
 },
 {
-"word": "שביתה",
+"word": "שבועי",
+"common": false
+},
+{
+"word": "שבטים",
 "common": true
 },
 {
+"word": "שביעי",
+"common": false
+},
+{
+"word": "שביתה",
+"common": false
+},
+{
+"word": "שבעים",
+"common": false
+},
+{
 "word": "שבתות",
+"common": false
+},
+{
+"word": "שגיאה",
+"common": true
+},
+{
+"word": "שגריר",
+"common": true
+},
+{
+"word": "שגרתי",
+"common": false
+},
+{
+"word": "שוחרר",
+"common": true
+},
+{
+"word": "שוכנת",
 "common": true
 },
 {
 "word": "שולחן",
+"common": true
+},
+{
+"word": "שולטת",
+"common": false
+},
+{
+"word": "שולית",
+"common": false
+},
+{
+"word": "שונות",
+"common": true
+},
+{
+"word": "שונים",
+"common": true
+},
+{
+"word": "שופטת",
+"common": false
+},
+{
+"word": "שושלת",
 "common": true
 },
 {
@@ -1736,15 +6192,79 @@
 "common": true
 },
 {
-"word": "שטיפה",
+"word": "שחקים",
 "common": true
+},
+{
+"word": "שחרור",
+"common": true
+},
+{
+"word": "שטחים",
+"common": true
+},
+{
+"word": "שטיפה",
+"common": false
 },
 {
 "word": "שטרות",
 "common": true
 },
 {
+"word": "שיאים",
+"common": false
+},
+{
 "word": "שידור",
+"common": true
+},
+{
+"word": "שיווק",
+"common": true
+},
+{
+"word": "שיחות",
+"common": true
+},
+{
+"word": "שיחרר",
+"common": false
+},
+{
+"word": "שיטות",
+"common": true
+},
+{
+"word": "שייטת",
+"common": true
+},
+{
+"word": "שייכת",
+"common": true
+},
+{
+"word": "שיירה",
+"common": false
+},
+{
+"word": "שיכון",
+"common": false
+},
+{
+"word": "שילוב",
+"common": true
+},
+{
+"word": "שילוש",
+"common": false
+},
+{
+"word": "שימור",
+"common": true
+},
+{
+"word": "שימוש",
 "common": true
 },
 {
@@ -1753,14 +6273,34 @@
 },
 {
 "word": "שיעול",
-"common": true
+"common": false
 },
 {
 "word": "שיעור",
 "common": true
 },
 {
+"word": "שיעים",
+"common": false
+},
+{
+"word": "שיעית",
+"common": false
+},
+{
+"word": "שיפוט",
+"common": false
+},
+{
+"word": "שיפוץ",
+"common": true
+},
+{
 "word": "שיפור",
+"common": true
+},
+{
+"word": "שיקול",
 "common": true
 },
 {
@@ -1776,15 +6316,35 @@
 "common": true
 },
 {
+"word": "שישית",
+"common": false
+},
+{
+"word": "שכבות",
+"common": true
+},
+{
 "word": "שכונה",
 "common": true
 },
 {
 "word": "שכנים",
+"common": false
+},
+{
+"word": "שלבים",
 "common": true
 },
 {
 "word": "שלגים",
+"common": false
+},
+{
+"word": "שלושה",
+"common": true
+},
+{
+"word": "שלטון",
 "common": true
 },
 {
@@ -1792,24 +6352,40 @@
 "common": true
 },
 {
-"word": "שמחים",
+"word": "שלישי",
 "common": true
+},
+{
+"word": "שמועה",
+"common": false
+},
+{
+"word": "שמחים",
+"common": false
+},
+{
+"word": "שמיות",
+"common": false
 },
 {
 "word": "שמיים",
-"common": true
+"common": false
 },
 {
 "word": "שמיכה",
-"common": true
+"common": false
+},
+{
+"word": "שמיעה",
+"common": false
 },
 {
 "word": "שמלות",
-"common": true
+"common": false
 },
 {
 "word": "שמענו",
-"common": true
+"common": false
 },
 {
 "word": "שמעתי",
@@ -1817,7 +6393,11 @@
 },
 {
 "word": "שמרים",
-"common": true
+"common": false
+},
+{
+"word": "שמרני",
+"common": false
 },
 {
 "word": "שמשות",
@@ -1832,19 +6412,43 @@
 "common": true
 },
 {
-"word": "שעהות",
+"word": "שניים",
+"common": true
+},
+{
+"word": "שנתית",
 "common": false
 },
 {
-"word": "שעהים",
+"word": "שערות",
+"common": false
+},
+{
+"word": "שעשוע",
 "common": false
 },
 {
 "word": "שקדים",
-"common": true
+"common": false
+},
+{
+"word": "שקיעה",
+"common": false
 },
 {
 "word": "שרוול",
+"common": false
+},
+{
+"word": "שרטוט",
+"common": false
+},
+{
+"word": "שריון",
+"common": true
+},
+{
+"word": "שריפה",
 "common": true
 },
 {
@@ -1852,12 +6456,60 @@
 "common": true
 },
 {
-"word": "תאורה",
+"word": "שתייה",
+"common": false
+},
+{
+"word": "שתיים",
 "common": true
 },
 {
-"word": "תבלין",
+"word": "תאגיד",
 "common": true
+},
+{
+"word": "תאונה",
+"common": false
+},
+{
+"word": "תאורה",
+"common": false
+},
+{
+"word": "תאפשר",
+"common": false
+},
+{
+"word": "תאריך",
+"common": true
+},
+{
+"word": "תארים",
+"common": true
+},
+{
+"word": "תבואה",
+"common": false
+},
+{
+"word": "תבונה",
+"common": false
+},
+{
+"word": "תבוסה",
+"common": true
+},
+{
+"word": "תביעה",
+"common": true
+},
+{
+"word": "תבליט",
+"common": false
+},
+{
+"word": "תבלין",
+"common": false
 },
 {
 "word": "תבנית",
@@ -1868,12 +6520,32 @@
 "common": true
 },
 {
+"word": "תגמול",
+"common": false
+},
+{
+"word": "תדמית",
+"common": true
+},
+{
+"word": "תהילה",
+"common": false
+},
+{
 "word": "תהליך",
 "common": true
 },
 {
-"word": "תובנה",
+"word": "תהפוך",
 "common": true
+},
+{
+"word": "תובנה",
+"common": false
+},
+{
+"word": "תודעה",
+"common": false
 },
 {
 "word": "תווים",
@@ -1884,7 +6556,23 @@
 "common": true
 },
 {
+"word": "תוכנן",
+"common": true
+},
+{
 "word": "תולעת",
+"common": false
+},
+{
+"word": "תומכת",
+"common": true
+},
+{
+"word": "תוספת",
+"common": true
+},
+{
+"word": "תועלת",
 "common": true
 },
 {
@@ -1900,11 +6588,47 @@
 "common": true
 },
 {
+"word": "תוצרת",
+"common": true
+},
+{
+"word": "תוקפן",
+"common": false
+},
+{
+"word": "תורגם",
+"common": true
+},
+{
+"word": "תורכי",
+"common": false
+},
+{
+"word": "תורני",
+"common": false
+},
+{
 "word": "תזונה",
+"common": false
+},
+{
+"word": "תזמור",
+"common": false
+},
+{
+"word": "תחושה",
 "common": true
 },
 {
 "word": "תחזית",
+"common": false
+},
+{
+"word": "תחייה",
+"common": false
+},
+{
+"word": "תחילה",
 "common": true
 },
 {
@@ -1912,11 +6636,31 @@
 "common": true
 },
 {
+"word": "תחקיר",
+"common": false
+},
+{
 "word": "תחרות",
 "common": true
 },
 {
+"word": "תחתון",
+"common": false
+},
+{
+"word": "תחתית",
+"common": true
+},
+{
 "word": "תיאום",
+"common": false
+},
+{
+"word": "תיאור",
+"common": true
+},
+{
+"word": "תיבות",
 "common": true
 },
 {
@@ -1928,7 +6672,23 @@
 "common": true
 },
 {
+"word": "תיעוד",
+"common": true
+},
+{
+"word": "תיעוש",
+"common": false
+},
+{
+"word": "תיקון",
+"common": true
+},
+{
 "word": "תיקים",
+"common": false
+},
+{
+"word": "תכונה",
 "common": true
 },
 {
@@ -1940,7 +6700,19 @@
 "common": true
 },
 {
+"word": "תכנים",
+"common": true
+},
+{
+"word": "תכשיט",
+"common": false
+},
+{
 "word": "תלונה",
+"common": false
+},
+{
+"word": "תלמוד",
 "common": true
 },
 {
@@ -1952,7 +6724,23 @@
 "common": true
 },
 {
+"word": "תמותה",
+"common": false
+},
+{
+"word": "תמיכה",
+"common": true
+},
+{
+"word": "תמרון",
+"common": false
+},
+{
 "word": "תמרור",
+"common": false
+},
+{
+"word": "תנאים",
 "common": true
 },
 {
@@ -1960,19 +6748,83 @@
 "common": true
 },
 {
+"word": "תסמין",
+"common": false
+},
+{
 "word": "תסריט",
 "common": true
 },
 {
+"word": "תעבור",
+"common": false
+},
+{
 "word": "תעודה",
+"common": false
+},
+{
+"word": "תעופה",
 "common": true
+},
+{
+"word": "תעסוק",
+"common": false
+},
+{
+"word": "תערוך",
+"common": false
+},
+{
+"word": "תעשיה",
+"common": false
+},
+{
+"word": "תעתיק",
+"common": true
+},
+{
+"word": "תפוצה",
+"common": false
+},
+{
+"word": "תפוקה",
+"common": false
 },
 {
 "word": "תפילה",
 "common": true
 },
 {
+"word": "תפיסה",
+"common": true
+},
+{
+"word": "תפישה",
+"common": false
+},
+{
+"word": "תפקוד",
+"common": false
+},
+{
 "word": "תפקיד",
+"common": true
+},
+{
+"word": "תצוגה",
+"common": true
+},
+{
+"word": "תצלום",
+"common": false
+},
+{
+"word": "תצפית",
+"common": true
+},
+{
+"word": "תקדים",
 "common": true
 },
 {
@@ -1980,11 +6832,51 @@
 "common": true
 },
 {
+"word": "תקופה",
+"common": true
+},
+{
+"word": "תקיים",
+"common": false
+},
+{
+"word": "תקינה",
+"common": true
+},
+{
 "word": "תקיפה",
 "common": true
 },
 {
+"word": "תקליט",
+"common": true
+},
+{
+"word": "תקנות",
+"common": true
+},
+{
+"word": "תקנים",
+"common": false
+},
+{
+"word": "תקפות",
+"common": false
+},
+{
 "word": "תקציב",
+"common": true
+},
+{
+"word": "תקציר",
+"common": true
+},
+{
+"word": "תקרית",
+"common": false
+},
+{
+"word": "תרבות",
 "common": true
 },
 {
@@ -1993,6 +6885,10 @@
 },
 {
 "word": "תרגיל",
+"common": false
+},
+{
+"word": "תרומה",
 "common": true
 },
 {
@@ -2000,11 +6896,31 @@
 "common": true
 },
 {
+"word": "תרשים",
+"common": false
+},
+{
 "word": "תשואה",
-"common": true
+"common": false
 },
 {
 "word": "תשובה",
+"common": true
+},
+{
+"word": "תשיעי",
+"common": false
+},
+{
+"word": "תשלום",
+"common": true
+},
+{
+"word": "תשעים",
+"common": false
+},
+{
+"word": "תשתית",
 "common": true
 }
 ]

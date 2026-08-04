@@ -203,9 +203,51 @@ registered at all.
   discarded but were still shipping) were removed, and 7 correctly-spelled
   replacements added. It then grew to 502 via `build_words_he_extra.cjs` (repo
   root, kept for reuse), after a player hit the shake on ordinary words —
-  `אנשים` and `דגלים` were both missing. That script enforces the rules below
-  mechanically and prints every rejection. **502 is still small**; expect more
-  legitimate words to be refused, and treat further expansion as wanted work. **If asked to "finish" or "expand" the word bank later, that's real,
+  `אנשים` and `דגלים` were both missing.
+
+  It is now **1,731 words, rebuilt against a real corpus** (see below), which
+  is what finally made the bank trustworthy rather than merely well-formed.
+
+### The corpus, and why "well-formed" was never enough
+
+Until the user supplied a Hebrew Wikipedia word-frequency list (~656k rows,
+546k pure-Hebrew tokens), there was no way to check whether a bank entry was a
+*real word* — only whether it was spelled plausibly. That gap shipped: `חיהים`
+(a naive חיה+ים) is five Hebrew letters with no misplaced final letter, so it
+passed every check, and a player got it as an answer. Cross-checking the 502
+entries against the corpus found **17 fabricated words**, all the same
+ות/ים concatenation pattern: `חיהים חיהות שעהים שעהות דקהים דקהות עלהות ביתות
+סלעות פרחות רגעות רוחים ירחות גזעות עפרים פריות`. (`נשנוש` was also dropped —
+a real colloquial word, just absent from Wikipedia.)
+
+Regenerating the bank is a two-stage pipeline:
+
+1. `tools/build_he_candidates.py` — needs the source spreadsheet, which is NOT
+   in the repo (12 MB). Filters ~93k five-letter tokens down to ~1,485 by
+   dropping particle-prefixed forms (`בשנות` = ב+שנות), construct/smichut
+   forms (`מלחמת`, `חיילי`), non-standard א spellings (`גרסא`), 2nd-person
+   future forms (`תקבלו`), and anything lacking morphological evidence of being
+   an ordinary word — proper nouns essentially never take the definite article
+   or a plural ending, so `מדריד`/`ראובן`/`ורסאי` score zero and drop out.
+   A stoplist catches the frequent names that survive anyway (`ישראל` passes
+   only because `ישראלים` exists). Outputs `tools/he_corpus_candidates.json`.
+2. `build_words_he_corpus.cjs` — merges those into `public/words.json` and
+   drops any existing entry the corpus has never seen. Checks attestation
+   against `tools/he_corpus_attested.json` (all 93k tokens), **not** against
+   the curated candidate list: a real word is often missing from the curated
+   list without being fake, and confusing the two silently deletes ~260 good
+   words.
+
+Two traps worth remembering: a word ending in medial **פ** is correct for
+loanwords (`סירופ`, `בישופ`) because final ף reads /f/ — only כ/מ/נ/צ are
+errors there; and low corpus frequency is not evidence of fakeness (`קרסול`,
+`נסעתי` are real but rare in encyclopaedic writing), so only *zero* attestation
+justifies removal.
+
+**~1,500 was the honest ceiling, not 2,500.** The user asked for ~2,500 ordinary
+words; past roughly 1,500 the filtered corpus is mostly transliterations
+(`גואנו`, `ביטלס`), rare verb inflections and residue, so the bank stops there
+rather than padding to a number. **If asked to "finish" or "expand" the word bank later, that's real,
   wanted follow-up work — not a bug to silently work around.** Any
   expansion must go through the same validation discipline: every candidate
   checked for exact 5-letter length using `HEBREW_LETTERS` set membership

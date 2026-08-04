@@ -12,7 +12,7 @@ import { useGameEngine } from "./hooks/useGameEngine";
 import { useStats } from "./hooks/useStats";
 import { useKeyboardInput } from "./hooks/useKeyboardInput";
 import { useLanguage } from "./hooks/useLanguage";
-import { getLanguage } from "./config/languages";
+import { getLanguage, hasOnlyLanguageLetters } from "./config/languages";
 import styles from "./App.module.css";
 
 export default function App({ updateAvailable, onUpdate }) {
@@ -24,6 +24,10 @@ export default function App({ updateAvailable, onUpdate }) {
   const [targetWord, setTargetWord] = useState(null);
   const [menuOpen, setMenuOpen] = useState(false);
   const [commonOnly, setCommonOnly] = useState(() => config.defaultCommonOnly);
+  // The bank is the source of *answers*. Requiring guesses to appear in it too
+  // is a separate rule, and it's off by default: at a few hundred words the
+  // bank rejects far more real words than it catches junk ones.
+  const [strictWordBank, setStrictWordBank] = useState(false);
   const [shakeRow, setShakeRow] = useState(null);
   const [message, setMessage] = useState("");
   const recordedRef = useRef(false);
@@ -50,7 +54,9 @@ export default function App({ updateAvailable, onUpdate }) {
       setMessage(
         kind === "invalid-length"
           ? t("errWrongLength", WORD_LENGTH)
-          : t("errNotInBank")
+          : strictWordBank
+            ? t("errNotInBank")
+            : t("errBadLetters")
       );
       const shakeTimer = setTimeout(() => setShakeRow(null), 320);
       const messageTimer = setTimeout(() => setMessage(""), 1800);
@@ -79,7 +85,16 @@ export default function App({ updateAvailable, onUpdate }) {
 
   const handleLetter = useCallback((letter) => engine.addLetter(letter), [engine]);
   const handleBackspace = useCallback(() => engine.removeLetter(), [engine]);
-  const handleEnter = useCallback(() => engine.submitGuess(isValidWord), [engine, isValidWord]);
+  const validateGuess = useCallback(
+    (word) =>
+      strictWordBank ? isValidWord(word) : hasOnlyLanguageLetters(word, lang),
+    [strictWordBank, isValidWord, lang]
+  );
+
+  const handleEnter = useCallback(
+    () => engine.submitGuess(validateGuess),
+    [engine, validateGuess]
+  );
 
   useKeyboardInput({
     onLetter: handleLetter,
@@ -176,6 +191,7 @@ export default function App({ updateAvailable, onUpdate }) {
           onBackToMenu={() => setMenuOpen(true)}
           pickRandomWord={pickRandomWord}
           isValidWord={isValidWord}
+          strictWordBank={strictWordBank}
           langCode={lang}
           t={t}
         />
@@ -188,6 +204,8 @@ export default function App({ updateAvailable, onUpdate }) {
         commonCount={commonCount}
         commonOnly={commonOnly}
         onToggleCommonOnly={setCommonOnly}
+        strictWordBank={strictWordBank}
+        onToggleStrictWordBank={setStrictWordBank}
         stats={stats}
         onResetStats={resetStats}
         lang={lang}

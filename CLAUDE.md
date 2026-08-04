@@ -223,6 +223,17 @@ registered at all.
   than silently swallowed (that report is how 15 bad candidates were caught).
   It is `.cjs`, not `.js`, because `package.json` sets `"type": "module"`.
   Regenerate with `node build_words_en.cjs public/words-en.json`.
+- **A guess does NOT have to be in the word bank.** The bank is the source of
+  *answers*; guesses only have to be well-formed (right length, letters of the
+  active language). Real Wordle can validate guesses because it keeps two
+  separate lists — a small answer list and a ~13,000-word list of allowed
+  guesses. Here there is one list serving both roles, and at a few hundred
+  words it rejected far more real words than junk ones; a player hitting the
+  shake on `תרחיף` is what surfaced it. The strict behaviour is still
+  available as "רק מילים מהמאגר" / "Only words in the bank" in the menu, but it
+  is **off by default**. The same rule governs the WordPicker: a player
+  choosing the next word for a friend isn't restricted to the bank either.
+  If the bank ever grows to a genuine guess-list size, revisit the default.
 - **Final Hebrew letters (ך/ם/ן/ף/ץ) normalize to their regular form for
   guess comparison only**, per explicit user approval in the spec. Display
   still shows whatever was actually typed/stored — only `evaluateGuess`

@@ -8,6 +8,8 @@ export default function MenuDrawer({
   commonCount,
   commonOnly,
   onToggleCommonOnly,
+  strictWordBank,
+  onToggleStrictWordBank,
   stats,
   onResetStats,
   lang,
@@ -58,6 +60,33 @@ export default function MenuDrawer({
             ))}
           </div>
           <p className={styles.sectionText}>{t("languageHint")}</p>
+        </section>
+
+        <section className={styles.section}>
+          <h3 className={styles.sectionTitle}>{t("guessRuleSection")}</h3>
+          <div className={styles.toggleRow}>
+            <button
+              className={[styles.toggleOpt, !strictWordBank ? styles.active : ""]
+                .filter(Boolean)
+                .join(" ")}
+              onClick={() => onToggleStrictWordBank(false)}
+              type="button"
+              aria-pressed={!strictWordBank}
+            >
+              {t("guessRuleAny")}
+            </button>
+            <button
+              className={[styles.toggleOpt, strictWordBank ? styles.active : ""]
+                .filter(Boolean)
+                .join(" ")}
+              onClick={() => onToggleStrictWordBank(true)}
+              type="button"
+              aria-pressed={strictWordBank}
+            >
+              {t("guessRuleBankOnly")}
+            </button>
+          </div>
+          <p className={styles.sectionText}>{t("guessRuleHint")}</p>
         </section>
 
         <section className={styles.section}>

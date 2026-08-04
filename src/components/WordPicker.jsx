@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { WORD_LENGTH } from "../config/constants";
-import { getLanguage } from "../config/languages";
+import { getLanguage, hasOnlyLanguageLetters } from "../config/languages";
 import styles from "./WordPicker.module.css";
 
 /**
@@ -11,6 +11,7 @@ export default function WordPicker({
   onConfirm,
   pickRandomWord,
   isValidWord,
+  strictWordBank,
   langCode,
   t,
 }) {
@@ -27,7 +28,14 @@ export default function WordPicker({
       setError(t("errWrongLength", WORD_LENGTH));
       return;
     }
-    if (!isValidWord(trimmed)) {
+    // A hand-picked word is chosen by a player for the next player, so it only
+    // has to be well-formed — the bank is the source of *random* words, not a
+    // whitelist of what a person is allowed to choose.
+    if (!hasOnlyLanguageLetters(trimmed, langCode)) {
+      setError(t("errBadLetters"));
+      return;
+    }
+    if (strictWordBank && !isValidWord(trimmed)) {
       setError(t("errNotInBank"));
       return;
     }

@@ -3,6 +3,18 @@
 export function registerServiceWorker(onUpdateAvailable) {
   if (!("serviceWorker" in navigator)) return;
 
+  // Never run the worker against the dev server: it would cache Vite's
+  // unhashed dev modules and then serve them back stale, so source edits
+  // silently stop showing up. Also clear one left over from a previous
+  // production build on the same origin (localhost is shared between them).
+  if (import.meta.env.DEV) {
+    navigator.serviceWorker
+      .getRegistrations()
+      .then((regs) => regs.forEach((r) => r.unregister()))
+      .catch(() => {});
+    return;
+  }
+
   function register() {
     const swUrl = `${import.meta.env.BASE_URL}service-worker.js`;
 

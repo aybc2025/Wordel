@@ -61,3 +61,16 @@ export function getLanguage(code) {
 export function canonicalizeLetter(letter, langCode) {
   return langCode === "en" ? letter.toUpperCase() : letter;
 }
+
+/**
+ * True when every character belongs to the language's alphabet. This is the
+ * permissive guess rule: the word bank decides what can be an *answer*, but a
+ * guess only has to be well-formed. On-screen input can't produce anything
+ * else; this mainly guards the WordPicker's free-text field against pasted
+ * digits, punctuation or the other language's letters.
+ */
+export function hasOnlyLanguageLetters(word, langCode) {
+  const letters = new Set(getLanguage(langCode).letters.split(""));
+  const chars = [...word].map((c) => canonicalizeLetter(c, langCode));
+  return chars.length > 0 && chars.every((c) => letters.has(c));
+}

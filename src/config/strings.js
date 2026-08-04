@@ -40,6 +40,13 @@ export const STRINGS = {
     languageSection: "שפה",
     languageHint: "החלפת שפה מתחילה סבב חדש עם מאגר המילים של אותה שפה.",
 
+    guessRuleSection: "בדיקת ניחושים",
+    guessRuleHint:
+      "המאגר קטן, ולכן דרישה שכל ניחוש יופיע בו דוחה הרבה מילים אמיתיות. כברירת מחדל מתקבלת כל מילה בת 5 אותיות.",
+    guessRuleAny: "כל מילה בת 5 אותיות",
+    guessRuleBankOnly: "רק מילים מהמאגר",
+    errBadLetters: "אפשר להשתמש רק באותיות עבריות",
+
     wordBankSection: "מאגר המילים",
     wordBankText: (total, common) =>
       `${total} מילים בנות 5 אותיות במאגר, מתוכן ${common} מסומנות כנפוצות. אפשר לצמצם את ההגרלה האקראית למילים נפוצות בלבד:`,
@@ -88,6 +95,13 @@ export const STRINGS = {
 
     languageSection: "Language",
     languageHint: "Switching language starts a new round using that language's word bank.",
+
+    guessRuleSection: "Guess checking",
+    guessRuleHint:
+      "The bank is small, so requiring every guess to appear in it rejects a lot of real words. By default any 5-letter word is accepted.",
+    guessRuleAny: "Any 5-letter word",
+    guessRuleBankOnly: "Only words in the bank",
+    errBadLetters: "Only English letters can be used",
 
     wordBankSection: "Word bank",
     wordBankText: (total, common) =>

@@ -20,11 +20,11 @@
 .key {
   background: var(--ink-2);
   color: var(--paper);
-  border: none;
+  border: 1px solid var(--line);
   border-radius: 6px;
-  font-size: 15px;
+  font-size: 17px;
   font-weight: 700;
-  height: 46px;
+  height: 48px;
   min-width: 32px;
   flex: 1;
   max-width: 38px;
@@ -46,8 +46,8 @@
 }
 
 .wide {
-  max-width: 56px;
-  font-size: 12px;
+  max-width: 58px;
+  font-size: 13px;
 }
 
 .correct {

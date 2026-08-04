@@ -2,9 +2,11 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 6px;
+  justify-content: center;
+  gap: 8px;
   padding: 16px 0;
-  flex-shrink: 0;
+  flex: 1;
+  min-height: 0;
 }
 
 /* No explicit flex-direction: a plain `row` already follows the document's
@@ -12,7 +14,7 @@
    (An earlier `row-reverse` here double-flipped RTL back into LTR.) */
 .row {
   display: flex;
-  gap: 6px;
+  gap: 8px;
 }
 
 .shake {

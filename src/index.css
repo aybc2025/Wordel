@@ -9,6 +9,9 @@
   --coral: #e0654a;
   --muted: #9aa3ab;
   --line: #33393f;
+  --slate-border: #6b747d;
+  --tile-empty-bg: #2a3036;
+  --tile-filled-bg: #333a41;
 }
 
 * {

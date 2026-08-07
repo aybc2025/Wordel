@@ -3,10 +3,11 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 8px;
-  padding: 16px 0;
+  gap: clamp(4px, 1.2vmin, 12px);
+  padding: clamp(8px, 2vmin, 20px) clamp(8px, 3vmin, 24px);
   flex: 1;
   min-height: 0;
+  width: 100%;
 }
 
 /* No explicit flex-direction: a plain `row` already follows the document's
@@ -14,7 +15,9 @@
    (An earlier `row-reverse` here double-flipped RTL back into LTR.) */
 .row {
   display: flex;
-  gap: 8px;
+  gap: clamp(4px, 1.2vmin, 12px);
+  width: 100%;
+  justify-content: center;
 }
 
 .shake {
@@ -22,23 +25,10 @@
 }
 
 @keyframes shake {
-  10%,
-  90% {
-    transform: translateX(-2px);
-  }
-  20%,
-  80% {
-    transform: translateX(3px);
-  }
-  30%,
-  50%,
-  70% {
-    transform: translateX(-5px);
-  }
-  40%,
-  60% {
-    transform: translateX(5px);
-  }
+  10%, 90% { transform: translateX(-2px); }
+  20%, 80% { transform: translateX(3px); }
+  30%, 50%, 70% { transform: translateX(-5px); }
+  40%, 60% { transform: translateX(5px); }
 }
 
 @media (prefers-reduced-motion: reduce) {

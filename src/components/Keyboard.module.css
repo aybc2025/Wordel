@@ -1,9 +1,10 @@
 .keyboard {
   margin-top: auto;
-  padding: 10px 8px calc(16px + env(safe-area-inset-bottom));
+  padding: clamp(8px, 1.5vmin, 16px) clamp(4px, 1.5vmin, 12px)
+    calc(clamp(10px, 2vmin, 20px) + env(safe-area-inset-bottom));
   display: flex;
   flex-direction: column;
-  gap: 8px;
+  gap: clamp(6px, 1.2vmin, 10px);
   flex-shrink: 0;
 }
 
@@ -12,28 +13,33 @@
    left), so key order must not follow the document's `dir`. */
 .row {
   display: flex;
-  gap: 6px;
+  gap: clamp(4px, 1vmin, 8px);
   justify-content: center;
   direction: ltr;
+  width: 100%;
 }
 
+/* min-width: 0 is what prevents the 11-key bottom row from overflowing:
+   keys must be free to shrink below their content width. The wide keys
+   claim their extra room through flex-grow (below), not a min-width. */
 .key {
   background: var(--ink-2);
   color: var(--paper);
   border: 1px solid var(--line);
   border-radius: 6px;
-  font-size: 17px;
+  font-size: clamp(15px, 2.1dvh, 23px);
   font-weight: 700;
-  height: 48px;
-  min-width: 32px;
-  flex: 1;
-  max-width: 38px;
+  height: clamp(46px, 6.5dvh, 64px);
+  min-width: 0;
+  flex: 1 1 0;
+  max-width: clamp(38px, 9.5vw, 62px);
   display: flex;
   align-items: center;
   justify-content: center;
   cursor: pointer;
   transition: background 0.1s ease, transform 0.1s ease;
   font-family: inherit;
+  overflow: hidden;
 }
 
 .key:active {
@@ -45,9 +51,13 @@
   cursor: default;
 }
 
+/* Grows 1.8x faster than a letter key, so "אישור" always has room even
+   when the row is squeezed onto a narrow phone. */
 .wide {
-  max-width: 58px;
-  font-size: 13px;
+  flex: 1.8 1 0;
+  max-width: clamp(56px, 15vw, 92px);
+  font-size: clamp(11px, 3vw, 15px);
+  white-space: nowrap;
 }
 
 .correct {

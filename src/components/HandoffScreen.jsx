@@ -15,6 +15,7 @@ export default function HandoffScreen({
   onBackToMenu,
   pickRandomWord,
   isValidWord,
+  strictWordBank,
   langCode,
   t,
 }) {
@@ -35,6 +36,7 @@ export default function HandoffScreen({
         onConfirm={onStartNewRound}
         pickRandomWord={pickRandomWord}
         isValidWord={isValidWord}
+        strictWordBank={strictWordBank}
         langCode={langCode}
         t={t}
       />

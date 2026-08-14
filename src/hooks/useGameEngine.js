@@ -62,7 +62,7 @@ export function useGameEngine(targetWord, langCode = "he") {
 
       const nextGuesses = [...submittedGuesses, evaluated];
       setSubmittedGuesses(nextGuesses);
-      setKeyStatuses((prev) => mergeKeyStatuses(prev, evaluated));
+      setKeyStatuses((prev) => mergeKeyStatuses(prev, evaluated, langCode));
       setCurrentInput("");
 
       if (isWin) {

@@ -1,5 +1,5 @@
 import { TILE_STATUS, WORD_LENGTH } from "../config/constants";
-import { normalizeWord } from "./normalizeHebrew";
+import { normalizeWord, normalizeLetter } from "./normalizeHebrew";
 
 /**
  * Evaluates a guess against the target word using standard Wordle rules,
@@ -50,8 +50,15 @@ export function evaluateGuess(guess, target, langCode = "he") {
 /**
  * Merges a new evaluated guess into the running best-known status per key,
  * for keyboard coloring. CORRECT > PRESENT > ABSENT priority (never downgrade).
+ *
+ * Keyed by normalizeLetter(), not the raw typed letter: evaluateGuess already
+ * folds ך/ם/ן/ף/ץ to their base form (כ/מ/נ/פ/צ) before deciding correctness,
+ * so a status learned by typing one form must show up on the other form's
+ * on-screen key too — otherwise the two keys drift out of sync (e.g. ם lights
+ * up green from a guess while מ, the key a player would actually reach for,
+ * stays gray). Keyboard.jsx does the matching normalize on lookup.
  */
-export function mergeKeyStatuses(existingStatuses, evaluatedGuess) {
+export function mergeKeyStatuses(existingStatuses, evaluatedGuess, langCode = "he") {
   const priority = {
     [TILE_STATUS.CORRECT]: 3,
     [TILE_STATUS.PRESENT]: 2,
@@ -59,9 +66,10 @@ export function mergeKeyStatuses(existingStatuses, evaluatedGuess) {
   };
   const next = { ...existingStatuses };
   for (const { letter, status } of evaluatedGuess) {
-    const current = next[letter];
+    const key = normalizeLetter(letter, langCode);
+    const current = next[key];
     if (!current || priority[status] > priority[current]) {
-      next[letter] = status;
+      next[key] = status;
     }
   }
   return next;

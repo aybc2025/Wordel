@@ -1,5 +1,6 @@
 import { TILE_STATUS } from "../config/constants";
 import { getLanguage } from "../config/languages";
+import { normalizeLetter } from "../utils/normalizeHebrew";
 import styles from "./Keyboard.module.css";
 
 /**
@@ -7,6 +8,12 @@ import styles from "./Keyboard.module.css";
  * best-known status across all submitted guesses (keyStatuses from the game
  * engine). Row order is authored left-to-right and pinned that way in CSS —
  * see Keyboard.module.css.
+ *
+ * keyStatuses is keyed by normalizeLetter() (see evaluateGuess.js's
+ * mergeKeyStatuses), so the lookup below normalizes each button's own label
+ * the same way — otherwise a final-form key (ם/ך/ן/ף/ץ) and its base-form
+ * counterpart (מ/כ/נ/פ/צ) would show independent, inconsistent colors even
+ * though they're the same letter for guess purposes.
  */
 export default function Keyboard({
   onLetter,
@@ -52,7 +59,7 @@ export default function Keyboard({
                 </button>
               );
             }
-            const status = keyStatuses[key];
+            const status = keyStatuses[normalizeLetter(key, langCode)];
             return (
               <button
                 key={key}

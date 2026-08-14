@@ -13,12 +13,22 @@ import { getLanguage } from "../config/languages";
 export function useWordBank(langCode = "he") {
   const [words, setWords] = useState([]);
   const [status, setStatus] = useState("loading"); // loading | ready | error
+  // Which langCode `status`/`words` actually belong to. Needed to guard
+  // against a real race: when `langCode` changes, this hook's own effect
+  // (which resets status/words for the new language) only runs *after* the
+  // render commits. On the render in between, this hook would otherwise still
+  // report the previous language's "ready" status and word list — and a
+  // caller reading that in an effect of its own (App.jsx's word-pick effect)
+  // could grab a word from the wrong language's bank. See CLAUDE.md's
+  // bilingual section for why that's a hard requirement, not a nice-to-have.
+  const [statusLang, setStatusLang] = useState(langCode);
 
   const wordsFile = getLanguage(langCode).wordsFile;
 
   useEffect(() => {
     let cancelled = false;
     setStatus("loading");
+    setStatusLang(langCode);
     setWords([]);
 
     fetch(`${import.meta.env.BASE_URL}${wordsFile}`)
@@ -39,19 +49,29 @@ export function useWordBank(langCode = "he") {
     return () => {
       cancelled = true;
     };
-  }, [wordsFile]);
+  }, [wordsFile, langCode]);
+
+  // Computed at render time (not in an effect) so there's no in-between
+  // render where a stale status/word-list can leak out as "ready".
+  const isCurrent = statusLang === langCode;
+  const effectiveStatus = isCurrent ? status : "loading";
+  const effectiveWords = isCurrent ? words : [];
 
   // Lookup set for O(1) validation, normalized so ך/כ (Hebrew) or letter case
-  // (English) match either form.
+  // (English) match either form. Built from effectiveWords so a mismatched
+  // (stale-language) render can't validate a guess against the wrong bank.
   const lookupSet = useMemo(() => {
     const set = new Set();
-    for (const entry of words) {
+    for (const entry of effectiveWords) {
       set.add(normalizeWord(entry.word, langCode));
     }
     return set;
-  }, [words, langCode]);
+  }, [effectiveWords, langCode]);
 
-  const commonWords = useMemo(() => words.filter((w) => w.common), [words]);
+  const commonWords = useMemo(
+    () => effectiveWords.filter((w) => w.common),
+    [effectiveWords]
+  );
 
   /**
    * Returns a random word (raw, as stored) from the bank.
@@ -59,12 +79,12 @@ export function useWordBank(langCode = "he") {
    */
   const pickRandomWord = useCallback(
     (commonOnly = false) => {
-      const pool = commonOnly ? commonWords : words;
+      const pool = commonOnly ? commonWords : effectiveWords;
       if (pool.length === 0) return null;
       const idx = Math.floor(Math.random() * pool.length);
       return pool[idx].word;
     },
-    [words, commonWords]
+    [effectiveWords, commonWords]
   );
 
   /**
@@ -79,8 +99,8 @@ export function useWordBank(langCode = "he") {
   );
 
   return {
-    status,
-    totalCount: words.length,
+    status: effectiveStatus,
+    totalCount: effectiveWords.length,
     commonCount: commonWords.length,
     pickRandomWord,
     isValidWord,
